@@ -8,12 +8,40 @@ var activity = require("../models/activity.js");
 var survey = require("../public/assets/js/survey.js")
 var db = require("../models");
 
+router.get("/signup", function(req,res){
+  res.render("signup");
+})
+
+router.get("/login", function(req, res){
+  res.render("login");
+})
+
+router.get("/members", function(req, res){
+  res.render("members");
+})
+
+router.get("/survey", function(req,res){
+    res.render("survey");
+})
+
 router.get("/home", function(req, res) {
       res.render("home");
 });
 
-router.get("/survey", function(req,res){
-    res.render("survey");
+router.get("/recipe", function(req,res){
+  res.render("recipe"); 
+})
+
+router.get("/activity", function(req, res){
+  res.render("activity");
+})
+
+router.get("/favactivities", function(req,res){
+  res.render("favactivities");
+})
+
+router.get("/favrecipes", function(req,res){
+  res.render("favrecipes");
 })
 
 // router.post("/api/recipe", function(req, res) {
