@@ -5,11 +5,12 @@ USE habitRabbit;
 CREATE TABLE recipes (
 	id INT AUTO_INCREMENT NOT NULL,
 	recipe_name VARCHAR(255),
-    recipe_img VARCHAR(255),
-    description VARCHAR(255),
-    ingredients VARCHAR(255),
+  recipe_img VARCHAR(255),
+	category VARCHAR(255),
+  description VARCHAR(255),
+  ingredients VARCHAR(555),
+	instructions VARCHAR(555),
 	starred BOOLEAN DEFAULT false,
-    createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
     
 );
@@ -17,12 +18,29 @@ CREATE TABLE recipes (
 CREATE TABLE activities (
 	id INT AUTO_INCREMENT NOT NULL,
 	activity_name VARCHAR(255),
-    activity_img VARCHAR(255),
-    description  VARCHAR(255),
+  activity_img VARCHAR(255),
+  description  VARCHAR(255),
+	category VARCHAR(255),
+	needed VARCHAR(255), 
+	instructions VARCHAR(555),
+	reps VARCHAR(255), 
+	sets VARCHAR(255), 
+	total_time VARCHAR(255), 
 	starred BOOLEAN DEFAULT false,
-    createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
+);
+
+
+CREATE TABLE users (
+	id INT AUTO_INCREMENT NOT NULL,
+  email VARCHAR(255),
+  password VARCHAR(255),
+  survey_q1 VARCHAR(255),
+  survey_q2 INT(2),
+  survey_q3 VARCHAR(55),
+  PRIMARY KEY (id)
 );
 
 SELECT * FROM activities;
 SELECT * FROM recipes;
+SELECT * FROM users;
