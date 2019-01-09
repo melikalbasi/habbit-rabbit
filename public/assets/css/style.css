@@ -1,5 +1,7 @@
-/* authentication styling */
-form.signup,
-form.login {
-  margin-top: 50px;
-}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9BC18D; }
+
+html {
+  font-size: 62.5%; }
