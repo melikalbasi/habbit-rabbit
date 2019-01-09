@@ -3,15 +3,21 @@ var app = express();
 var db = require("./models");
 
 var PORT = process.env.PORT || 8080;
+var passport = require("./config/passport");
 
+var bodyParser = require("body-parser");
+var session = require("express-session");
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.text());
+app.use(bodyParser.json({type: "application/vnd.api+json"}));
 
-// Parse application body
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 // Set Handlebars.
 var exphbs = require("express-handlebars");
 
@@ -22,6 +28,7 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/habbitrabbit_controller.js");
 
 app.use(routes);
+
 
 
 db.sequelize.sync().then(function(){
