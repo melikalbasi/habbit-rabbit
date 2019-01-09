@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "node-sass public/assets/sass/main.scss public/assets/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,13 @@
     "express-session": "^1.15.6",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
+
+    "node-sass": "^4.11.0",
+
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+
     "sequelize": "^4.42.0"
-  }
+  },
+  "devDependencies": {}
 }
