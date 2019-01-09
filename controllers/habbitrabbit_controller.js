@@ -4,6 +4,10 @@ var router = express.Router();
 var passport = require("../config/passport");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
+router.get("/", function(req,res){
+  res.render("splash");
+})
+
 router.get("/signup", function(req,res){
   res.render("signup");
 })
@@ -15,7 +19,6 @@ router.get("/login", function(req, res){
     res.render("login");
   }
 });
-
 
 router.get("/members", function(req, res){
   res.render("members");
