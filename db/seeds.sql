@@ -18,7 +18,7 @@ VALUES ("PB&J", "https://bit.ly/2SJReq4", "Vegan", "Quick, delicious and nutriti
 
 
 INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, starred) 
-VALUES ('Hiking', 'https://bit.ly/2H0y8KY', 'Outdoor Adventure', 0000-00-00);
+-- VALUES ('Hiking', 'https://bit.ly/2H0y8KY', 'Outdoor Adventure', 0000-00-00);
 
 
  
