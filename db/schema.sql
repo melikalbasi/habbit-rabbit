@@ -31,16 +31,5 @@ CREATE TABLE activities (
 );
 
 
-CREATE TABLE users (
-	id INT AUTO_INCREMENT NOT NULL,
-  email VARCHAR(255),
-  password VARCHAR(255),
-  survey_q1 VARCHAR(255),
-  survey_q2 INT(2),
-  survey_q3 VARCHAR(55),
-  PRIMARY KEY (id)
-);
-
 SELECT * FROM activities;
 SELECT * FROM recipes;
-SELECT * FROM users;
