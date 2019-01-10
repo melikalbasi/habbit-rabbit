@@ -31,5 +31,6 @@ CREATE TABLE activities (
 );
 
 
+
 SELECT * FROM activities;
 SELECT * FROM recipes;
