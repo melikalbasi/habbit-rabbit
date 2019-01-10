@@ -43,7 +43,7 @@ html {
   .splash__Button {
     position: absolute;
     left: 50%;
-    top: 75%;
+    top: 80%;
     transform: translate(-50%, -50%); }
     .splash__Button--button {
       padding: 0;
