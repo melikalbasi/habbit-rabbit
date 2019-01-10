@@ -29,8 +29,6 @@ var routes = require("./controllers/habbitrabbit_controller.js");
 
 app.use(routes);
 
-
-
 db.sequelize.sync().then(function(){
   // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {

@@ -9,7 +9,7 @@ CREATE TABLE recipes (
 	category VARCHAR(255),
   description VARCHAR(255),
   ingredients VARCHAR(555),
-	instructions VARCHAR(555),
+	instructions VARCHAR(5000),
 	starred BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
     
@@ -30,17 +30,5 @@ CREATE TABLE activities (
 	PRIMARY KEY (id)
 );
 
-
-CREATE TABLE users (
-	id INT AUTO_INCREMENT NOT NULL,
-  email VARCHAR(255),
-  password VARCHAR(255),
-  survey_q1 VARCHAR(255),
-  survey_q2 INT(2),
-  survey_q3 VARCHAR(55),
-  PRIMARY KEY (id)
-);
-
 SELECT * FROM activities;
 SELECT * FROM recipes;
-SELECT * FROM users;

@@ -1,7 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #9BC18D; }
+  background-color: #9BC18D; 
+  text-align: center;
+}
 
 html {
   font-size: 62.5%; }
+

@@ -28,9 +28,16 @@ $(document).ready(function() {
       email: email,
       password: password
     }).then(function(data) {
-      window.location.replace(data);
+      window.location.href = "/login"
+    })
+      // window.location.replace(data);
+  // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
+ 
+
       // If there's an error, handle it by throwing up a boostrap alert
-    }).catch(handleLoginErr);
+    .catch(handleLoginErr);
+    console.log(handleLoginErr)
+
   }
 
   function handleLoginErr(err) {
@@ -38,3 +45,15 @@ $(document).ready(function() {
     $("#alert").fadeIn(500);
   }
 });
+
+function loginUser(email, password) {
+  $.post("/api/login", {
+    email: email,
+    password: password
+  }).then(function(data) {
+    window.location.replace(data);
+    // If there's an error, log the error
+  }).catch(function(err) {
+    console.log(err);
+  });
+}
