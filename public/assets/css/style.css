@@ -1,7 +1,109 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #9BC18D; }
+<<<<<<< HEAD
+  background-color: #9BC18D; 
+  text-align: center;
+}
 
 html {
   font-size: 62.5%; }
+
+=======
+  background-color: #9BC18D;
+  font-family: 'Bitter', serif; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .splash__Logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 56.25em) {
+      .splash__Logo {
+        position: absolute;
+        left: 50%;
+        top: 35%; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
+    .splash__Logo--img {
+      width: 800px; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em) {
+    .splash__Logo--img {
+      width: 600px; } }
+  .splash__Button {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%); }
+    .splash__Button--button {
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      border: solid 1px transparent;
+      border-radius: 2em;
+      font-family: 'Bitter', serif;
+      color: #CEE0C7;
+      background-color: #C16F38;
+      padding: 1em 7em;
+      margin: 2em; }
+    .splash__Button--button:active {
+      transform: translateY(1px);
+      filter: saturate(150%); }
+    .splash__Button--button:hover {
+      color: #C16F38;
+      background-color: #CEE0C7;
+      border: solid 2px #C16F38; }
+    .splash__Button__text {
+      text-decoration: none;
+      color: #CEE0C7; }
+    .splash__Button__text:link {
+      text-decoration: none;
+      color: #CEE0C7; }
+
+a {
+  text-decoration: none;
+  color: #CEE0C7; }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  color: #CEE0C7; }
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration: none; }
+
+a:hover {
+  /* Applies to links under the pointer */
+  text-decoration: none;
+  color: #C16F38; }
+
+a:active {
+  /* Applies to activated links */
+  text-decoration: none; }
+>>>>>>> babc2c1355d91396fd9f30af218fe4713c25764e

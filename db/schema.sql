@@ -9,7 +9,7 @@ CREATE TABLE recipes (
 	category VARCHAR(255),
   description VARCHAR(255),
   ingredients VARCHAR(555),
-	instructions VARCHAR(555),
+	instructions VARCHAR(5000),
 	starred BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
     
@@ -30,6 +30,10 @@ CREATE TABLE activities (
 	PRIMARY KEY (id)
 );
 
+<<<<<<< HEAD
+=======
 
+
+>>>>>>> babc2c1355d91396fd9f30af218fe4713c25764e
 SELECT * FROM activities;
 SELECT * FROM recipes;
