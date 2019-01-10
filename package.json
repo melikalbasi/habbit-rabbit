@@ -1,0 +1,41 @@
+{
+  "name": "habbit-rabbit",
+  "version": "1.0.0",
+  "description": "Project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "sass": "node-sass public/assets/sass/main.scss public/assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melikalbasi/Habbit-Rabbit.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "api"
+  ],
+  "author": "lindsey walker michael tru michael wu melika kalbasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melikalbasi/Habbit-Rabbit/issues"
+  },
+  "homepage": "https://github.com/melikalbasi/Habbit-Rabbit#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
+    "node-sass": "^4.11.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {}
+}

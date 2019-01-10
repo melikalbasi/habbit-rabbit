@@ -2,7 +2,24 @@ body {
     margin: 0;
     padding: 0;
     background-color: $color-primary;
+    font-family: 'Bitter', serif;
+    // background-color: red;
 }
 html {
     font-size: 62.5%;
+    @include responsive(l-desk) {
+        font-size: 75%; //1rem = 12px 12/16 = 75%
+      }
+    
+      @include responsive(t-land) { // width < 1200?
+        font-size: 56.25%; //1rem = 9px 9/16 = 56.25%
+      }
+    
+      @include responsive(t-port) { // width < 900?
+        font-size: 50%; //1rem = 8px 8/16 = 50%
+      }
+    
+      @include responsive(phone) { // width < 600?
+        font-size: 37.5%; //1rem = 6px 6/16 = 37.5%
+      }
 }

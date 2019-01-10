@@ -30,5 +30,10 @@ CREATE TABLE activities (
 	PRIMARY KEY (id)
 );
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> babc2c1355d91396fd9f30af218fe4713c25764e
 SELECT * FROM activities;
 SELECT * FROM recipes;

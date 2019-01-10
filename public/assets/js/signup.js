@@ -1,5 +1,8 @@
 $(document).ready(function() {
   // Getting references to our form and input
+  var nameInput = $("#name-input");
+  var ageInput = $("#age-input");
+  var dietInput = $("#diet-input");
   var signUpForm = $("form.signup");
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
@@ -8,6 +11,9 @@ $(document).ready(function() {
   signUpForm.on("submit", function(event) {
     event.preventDefault();
     var userData = {
+      name: nameInput.val().trim(),
+      age: ageInput.val().trim(),
+      diet: dietInput.val().trim(),
       email: emailInput.val().trim(),
       password: passwordInput.val().trim()
     };
@@ -25,6 +31,9 @@ $(document).ready(function() {
   // Otherwise we log any errors
   function signUpUser(email, password) {
     $.post("/api/signup", {
+      name: nameInput,
+      age: ageInput,
+      diet: dietInput,
       email: email,
       password: password
     }).then(function(data) {
