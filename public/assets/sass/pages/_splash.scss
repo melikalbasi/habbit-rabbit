@@ -1,0 +1,98 @@
+.splash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    @include responsive(t-port) { 
+    
+    
+      }
+    &__Logo{
+        @include center-element;
+         @include responsive(t-port) { 
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            // width: 400px;
+
+
+            &--img{
+                @include responsive(t-port) { 
+                    width: 800px;
+                }
+                @include responsive(phone) { 
+                    width: 600px;
+                }
+
+            }
+          }
+     
+
+    }
+    &__Button{
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        &--button{
+            @include button-reset;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            border: solid 1px transparent;
+            border-radius: 2em;
+            font-family: 'Bitter', serif;
+            // font-size: 4em;
+            color: $color-primary-light;
+            background-color: $color-secondary;
+            padding: 1em 7em ;
+            margin: 2em;
+            
+        }
+        &--button:active{
+            transform: translateY(1px);
+            filter: saturate(150%);
+        }
+        &--button:hover{
+            color: $color-secondary;
+            background-color: $color-primary-light;
+            border: solid 2px $color-secondary;
+        }
+
+       &__text{
+        text-decoration: none;
+        color: $color-primary-light;
+       }
+       &__text:link{
+        text-decoration: none;
+        color: $color-primary-light;
+       }
+    }
+}
+a{
+    text-decoration:  none;
+    color: $color-primary-light;
+
+}
+a:link {
+    /* Applies to all unvisited links */
+    text-decoration:  none;
+    color: $color-primary-light;
+
+    } 
+  a:visited {
+    /* Applies to all visited links */
+    text-decoration:  none;
+
+    } 
+  a:hover   {
+    /* Applies to links under the pointer */
+    text-decoration:  none;
+    color: $color-secondary;
+
+    } 
+  a:active  {
+    /* Applies to activated links */
+    text-decoration:  none;
+
+    } 
