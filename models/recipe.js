@@ -10,6 +10,6 @@ module.exports = function(sequelize, DataTypes){
         instructions: DataTypes.STRING,
         starred: {type: DataTypes.BOOLEAN, defaultValue: false}
 
-    })
+    },{timestamps: false})
 return Recipe; 
 }
