@@ -2,14 +2,13 @@
     <section class="hero-area">
         <div class="hero-slides owl-carousel">
             {{#each recipes}}
-            {{id}}
-            <div class="single-hero-slide bg-img" style="background-image: url({{recipe_img}});">
+            <div class="single-hero-slide bg-img" style="background-image: url('{{recipe_img}}');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                             <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
+                                <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
+                                <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
                                 <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
                             </div>
                         </div>
@@ -21,12 +20,13 @@
         </div>
     </section>
 <div>
-    <h1>hi</h1>
+<!--
 {{#each recipes}}
     <h1>hello</h1>
 <img src="{{recipe_img}}">
 {{/each}}
 </div>
+-->
 
 
 <!--

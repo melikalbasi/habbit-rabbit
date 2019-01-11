@@ -114,7 +114,9 @@ a:active {
     height: auto;
 }
 
-
+.bg-img{
+    width: 100vw;
+}
 .hero-area {
   position: relative;
   z-index: 1;
