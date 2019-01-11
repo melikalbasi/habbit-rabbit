@@ -17,12 +17,16 @@ VALUES ("PB&J", "https://bit.ly/2SJReq4", "Vegan", "Quick, delicious and nutriti
 ("Chickpea Fritters with Courgette Salad", "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--1249463_8.jpg", "Vegetarian", "Mix up a pancake-style batter to make little griddle cakes with storecupboard ingredients, then serve with a contrasting green salad", "Chickpea, Eggs, Milk, Flour, Baking Powder, Onions, Harissa, Sunflower oil, Courgettes, Mint leaes, Yogurt", "1. Blitz half the can of chickpeas in a food processor until smooth. With the motor running, add the eggs and milk, then sift in the flour and baking powder. Process until you have a lump-free batter. Fold in the whole chickpeas and chopped spring onions. Season and add half the harissa. 2. Heat half the oil and fry the courgettes in batches until golden; keep warm in a low oven. Heat a little more oil and cook 2 tbsp-portions of the fritter mix in batches for a couple of mins, until you see bubbles appear, then flip over and cook the other side until golden. Keep warm with the courgettes. 3. Toss together the courgettes, feta, mint and sliced spring onions. Divide between 4 plates and top each with 2 fritters and a dollop of yogurt swirled with the remaining harissa.", false);
 
 
-<<<<<<< HEAD
--- INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, starred) 
-=======
 INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, starred) 
->>>>>>> babc2c1355d91396fd9f30af218fe4713c25764e
--- VALUES ('Hiking', 'https://bit.ly/2H0y8KY', 'Outdoor Adventure', 0000-00-00);
+VALUES ("THE SUSPENSION TRAINER WORKOUT FOR BUILDING MASS", "https://bit.ly/2SOkyM2", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", );
 
-
- 
