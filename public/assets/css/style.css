@@ -176,7 +176,7 @@ a:active {
     font-size: 16px;
     font-weight: 600;
     opacity: 0;
-    visibility: hidden;
+    /* visibility: visible; */
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-bottom: 3px solid #1c8314; }

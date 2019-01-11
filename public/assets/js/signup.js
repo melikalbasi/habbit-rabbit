@@ -26,6 +26,8 @@ $(document).ready(function() {
     signUpUser(userData);
   });
 
+
+
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
   function signUpUser(newUser) {

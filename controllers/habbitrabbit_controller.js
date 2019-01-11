@@ -29,8 +29,8 @@ router.get("/home", function(req, res) {
       res.render("home");
 });
 
-router.get("/recipe", function(req,res){
-  db.Recipe.findAll({}).then(function(recipes){
+router.get("/recipe/:category", function(req,res){
+  db.Recipe.findAll({where: {category: req.params.category}}).then(function(recipes){
     var recipeHolder = []
     for (var i = 0 ; i < recipes.length; i++) {
       recipeHolder.push(recipes[i].dataValues)
@@ -120,7 +120,7 @@ router.get("/userprofile", function(req, res) {
     }
   });
 router.get("/recipe", function(req,res){
- db.Recipe.findAll({}).then(function(recipes){
+ db.Recipe.findAll({where:{ category: req.user.diet}}).then(function(recipes){
    var recipeHolder = []
    for (var i = 0 ; i < recipes.length; i++) {
      recipeHolder.push(recipes[i].dataValues)
@@ -130,6 +130,9 @@ router.get("/recipe", function(req,res){
      recipes: recipeHolder
    }
    res.render("recipe", hbsObj);
+
+   console.log("helllooooooooo" + req.user.diet);
+
 
  })
 
