@@ -111,7 +111,21 @@ router.get("/userprofile", function(req, res) {
       });
     }
   });
+router.get("/recipe", function(req,res){
+ db.Recipe.findAll({}).then(function(recipes){
+   var recipeHolder = []
+   for (var i = 0 ; i < recipes.length; i++) {
+     recipeHolder.push(recipes[i].dataValues)
+   }
+   console.log("=======\n", recipeHolder)
+   var hbsObj = {
+     recipes: recipeHolder
+   }
+   res.render("recipe", hbsObj);
 
+ })
+
+})
 // router.post("/api/recipe", function(req, res) {
 // db.Recipe.create({
 //   recipe_name: req.body.recipe_name
