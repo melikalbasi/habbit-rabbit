@@ -1,41 +1,22 @@
 
-  <script type="text/javascript" src="assets/js/recipe.js"></script>
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
-            {{#each recipes}}
-            <div class="single-hero-slide bg-img" style="background-image: url('{{recipe_img}}');" >
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
-                                <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
-                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
-                            </div>
-                        </div>
+<script type="text/javascript" src="assets/js/recipe.js"></script>
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        {{#each recipes}}
+        <div class="single-hero-slide bg-img" style="background-image: url('{{recipe_img}}');">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
+
                     </div>
                 </div>
             </div>
         </div>
         {{/each}}
-
+        </div>
+    </div>
 </section>
-<div>
-    <!--
-{{#each recipes}}
-<h1>hello</h1>
-<img src="{{recipe_img}}">
-{{/each}}
-</div>
--->
-
-
-    <!--
-
-<div id="owl-demo" class="owl-carousel owl-theme">
-
-<div class="item"><img src="/assets/img/pbj.jpg"></div>
-<div class="item"><img src="/assets/img/yoga.jpg" alt="GTA V"></div>
-
-</div>
--->
