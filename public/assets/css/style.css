@@ -162,9 +162,61 @@ label {
   background-color: #CEE0C7;
   border: solid 2px #C16F38; }
 
+.btn_logIn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 2px transparent;
+  border-radius: 2em;
+  font-family: 'Bitter', serif;
+  font-size: 1.5em;
+  color: #CEE0C7;
+  background-color: #C16F38;
+  padding: 1em 4.5em;
+  margin: 1em; }
+
+.btn_logIn:hover {
+  color: #C16F38;
+  background-color: #CEE0C7;
+  border: solid 2px #C16F38; }
+
 .form-control {
   background-color: #CEE0C7;
   color: #60371c;
   font-size: 1.5em;
   text-decoration: none;
-  outline: none; }
+  outline: none;
+  border-radius: 2em; }
+
+.containerLogIn__heading {
+  text-align: center;
+  font-size: 4em;
+  color: #60371c; }
+
+.containerLogIn__message {
+  font-size: 2em;
+  color: #60371c; }
+
+.containerFooter {
+  font-size: 1.5em;
+  background-color: #CEE0C7 #CEE0C7;
+  width: 100%;
+  height: 100px;
+  color: #60371c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+  .containerFooter__copyright {
+    padding: 4em 1em; }
+  .containerFooter__logo {
+    width: 225px; }
+    .containerFooter__logo--img {
+      width: 100%;
+      height: auto; }
