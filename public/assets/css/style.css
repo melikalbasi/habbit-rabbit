@@ -298,14 +298,13 @@ label {
     font-size: 16px;
     font-weight: 600;
     opacity: 0;
-    visibility: hidden;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-bottom: 3px solid #1c8314; }
     @media only screen and (max-width: 767px) {
       .hero-slides .owl-prev,
       .hero-slides .owl-next {
-        font-size: 13px; } }
+        font-size: 30px; } }
   .hero-slides .owl-next {
     left: auto;
     right: 4%; }
