@@ -23,7 +23,16 @@ VALUES ("PB&J", "https://bit.ly/2SJReq4", "Vegan", "Quick, delicious and nutriti
 
 
 INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, starred) 
-VALUES ()
 
+VALUES ("THE SUSPENSION TRAINER WORKOUT FOR BUILDING MASS", "https://bit.ly/2SOkyM2", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", ),
+("", "", "", "", "", "", "", "", "", "", );
 
- 
