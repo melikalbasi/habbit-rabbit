@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
   background-color: #9BC18D; 
   text-align: center;
 }
@@ -9,7 +8,6 @@ body {
 html {
   font-size: 62.5%; }
 
-=======
   background-color: #9BC18D;
   font-family: 'Bitter', serif; }
 
@@ -106,7 +104,6 @@ a:hover {
 a:active {
   /* Applies to activated links */
   text-decoration: none; }
->>>>>>> babc2c1355d91396fd9f30af218fe4713c25764e
 
 #owl-demo .item img{
     display: block;
