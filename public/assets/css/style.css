@@ -125,6 +125,8 @@ a:active {
   z-index: 1; }
   .hero-slides .single-hero-slide {
     width: 100%;
+      background-repeat: no-repeat;
+      background-size:100% auto;
     height: 820px;
     position: relative;
     z-index: 1; }
@@ -139,9 +141,9 @@ a:active {
         height: 650px; } }
     .hero-slides .single-hero-slide .hero-slides-content {
       position: relative;
+        margin-top: 150px;
       z-index: 1;
       padding: 60px 50px;
-      border-left: 3px solid #40ba37;
       background-color: rgba(24, 24, 24, 0.54); }
       @media only screen and (max-width: 767px) {
         .hero-slides .single-hero-slide .hero-slides-content {
@@ -219,7 +221,6 @@ a:active {
   height: 60px;
   color: #ffffff;
   border: none;
-  border-left: 3px solid #1c8314;
   border-radius: 0;
   padding: 0 30px;
   font-size: 16px;
