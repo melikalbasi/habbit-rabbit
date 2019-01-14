@@ -68,6 +68,8 @@ label{
 }
 
 .btn_signUp:hover{
+    text-decoration: none; 
+    outline: none; 
     color: $color-secondary;
     background-color: $color-primary-light;
     border: solid 2px $color-secondary;
@@ -77,6 +79,7 @@ label{
             display: inline-block;
             text-align: center;
             text-decoration: none;
+            outline: none;
             border: solid 2px transparent;
             border-radius: 2em;
             font-family: 'Bitter', serif;

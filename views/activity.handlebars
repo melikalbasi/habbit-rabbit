@@ -1,34 +1,25 @@
-<header>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/logout">
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
                     Logout
                 </a>
-                <a class="navbar-brand" href="/home">
+                <a class="navbar__Container--link2" href="/home">
                     Home
                 </a>
             </div>
+            <!--navbar__Container_header-->
+            <div class="navbar__Container--main">
+
+                <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
+                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+            </div>
+            <!--navbar__Containermain-->
         </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>Welcome <span class="member-name"></span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-wrapper black accent-2 z-depth-5">
-
-                <div class="col s12">
-                    <a href="/home" class="brand-logo" id="logo">
-                        <h1 class="z-depth-5">Habit Rabbit</h1>
-                    </a>
-                </div>
-            </div>
-        </nav>
-</header>
+        <!--navbar__Container-->
+    </div>
+</nav>
 
 <div class="container">
     <p>
@@ -49,9 +40,12 @@
 
 
 <footer>
-    <div class="footer-copyright">
-        <div class="container">
+    <div class="containerFooter">
+        <div class="containerFooter__copyright">
             © habit rabbit enterprises
+        </div>
+        <div class="containerFooter__logo">
+            <img class="containerFooter__logo--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
         </div>
     </div>
 </footer>
