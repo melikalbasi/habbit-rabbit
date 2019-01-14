@@ -126,8 +126,8 @@ router.get("/userprofile", function(req, res) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         name: req.user.name,
-        age: req.body.age,
-        diet: req.body.diet,
+        age: req.user.age,
+        diet: req.user.diet,
         email: req.user.email,
         id: req.user.id
       });
