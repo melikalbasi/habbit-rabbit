@@ -13,7 +13,6 @@ router.get("/signup", function(req,res){
 })
 
 router.get("/login", function(req, res){
-  console.log(req.user);
   if (req.user){
     res.render("profile");
   } else {
@@ -31,13 +30,11 @@ router.get("/home", function(req, res) {
 
 
 router.get("/recipe/:category", function(req,res){
-  console.log(req.params.category);
   db.Recipe.findAll({where: {category: req.params.category}}).then(function(recipes){
     var recipeHolder = []
     for (var i = 0 ; i < recipes.length; i++) {
       recipeHolder.push(recipes[i].dataValues)
     }
-    console.log("=======\n", recipeHolder)
     var hbsObj = {
       recipes: recipeHolder
     }  
@@ -133,23 +130,18 @@ router.get("/userprofile", function(req, res) {
       });
     }
   });
+  
 router.get("/recipe", function(req,res){
  db.Recipe.findAll({where:{ category: req.user.diet}}).then(function(recipes){
    var recipeHolder = []
    for (var i = 0 ; i < recipes.length; i++) {
      recipeHolder.push(recipes[i].dataValues)
    }
-   console.log("=======\n", recipeHolder)
    var hbsObj = {
      recipes: recipeHolder
    }
    res.render("recipe", hbsObj);
-
-   console.log("helllooooooooo" + req.user.diet);
-
-
  })
-
 })
 // Export routes for server.js to use.
 module.exports = router;

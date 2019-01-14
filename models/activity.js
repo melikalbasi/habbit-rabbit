@@ -1,6 +1,3 @@
-// var survey = require("../public/assets/js/survey.js");
-
-
 module.exports = function(sequelize, DataTypes){
     var Activity = sequelize.define("Activity", {
         activity_name: DataTypes.STRING,
