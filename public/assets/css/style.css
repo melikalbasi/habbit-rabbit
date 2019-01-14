@@ -361,3 +361,9 @@ label {
     color: #ffffff;
     background-color: #1c8314;
     border-color: #40ba37; }
+  #quote {
+    font-family: 'Staatliches', cursive;
+  }
+  #profile {
+    font-family: 'Pacifico', cursive;
+  }
