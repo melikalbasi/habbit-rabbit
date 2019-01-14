@@ -29,6 +29,8 @@ If it’s time to get moving, and you’re not sure what to do, go ahead and cli
 
 ## Models
 
+Habbit Rabbit was built on an MVC architecture with handlebars.
+
 Recipe model
 
 ![model](public/assets/images/readme6.png)
@@ -44,11 +46,20 @@ User Model
 
 ## Routes
 
+![model](public/assets/images/readme10.png)
+
+
 ## Database
 
 ## Login Authorization
 
+HabbitRabbit uses Passport authentication to keep user data secure with bcrypt, and express-session middleware which uses cookies so users can keep logging in again and again. 
+
+
 ## Planned Features
+
+![model](public/assets/images/readme9.png)
+
 
 
 ## Deployment

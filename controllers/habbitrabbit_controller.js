@@ -65,12 +65,6 @@ router.get("/favrecipes", function(req,res){
   res.render("favrecipes");
 })
 
-router.get("/userprofile", function(req, res) {
-  var hbsObject = {
-    user: req.user
-  }
-    res.render("survey", hbsObject);
-})
 
 
 
@@ -145,3 +139,4 @@ router.get("/recipe", function(req,res){
 })
 // Export routes for server.js to use.
 module.exports = router;
+
