@@ -26,6 +26,7 @@ CREATE TABLE activities (
 	reps VARCHAR(255), 
 	sets VARCHAR(255), 
 	total_time VARCHAR(255), 
+	below65 BOOLEAN,
 	starred BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

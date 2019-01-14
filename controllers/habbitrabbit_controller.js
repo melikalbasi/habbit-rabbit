@@ -29,7 +29,9 @@ router.get("/home", function(req, res) {
       res.render("home");
 });
 
+
 router.get("/recipe/:category", function(req,res){
+  console.log(req.params.category);
   db.Recipe.findAll({where: {category: req.params.category}}).then(function(recipes){
     var recipeHolder = []
     for (var i = 0 ; i < recipes.length; i++) {
@@ -46,7 +48,21 @@ router.get("/recipe/:category", function(req,res){
 })
 
 router.get("/activity", function(req, res){
-  res.render("activity");
+  var isOlder = false;
+  if (req.user.age >= 65) {
+    isOlder = true;
+
+  }
+    db.Activity.findAll({where:{ below65: isOlder}}).then(function(activities) {
+      // var activityHolder = [];
+      // for (var i=0; i < activities.length; i++) {
+        // activityHolder.push(activities[i].dataValues)
+      // }
+      var hbsObject = {
+        activities: activities
+      }
+      res.render("activity", hbsObject);
+    })
 })
 
 router.get("/favactivities", function(req,res){

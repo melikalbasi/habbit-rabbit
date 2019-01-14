@@ -22,17 +22,17 @@ VALUES ("PB&J", "https://bit.ly/2SJReq4", "Vegan", "Quick, delicious and nutriti
 ("Brown Rice Porridge with Hazelnuts and Jam", "https://assets.bonappetit.com/photos/57ad41891b3340441497556e/16:9/w_1280,c_limit/brown-rice-porridge-with-hazelnuts-and-jam.jpg", "Gluten Free", "Better than your average oatmeal", "Hazelnuts, Almond milk, Brown rice, Sugar, Salt, Vanilla Bean, Jam", "1. Preheat oven to 350°. Toast hazelnuts on a rimmed baking sheet, tossing occasionally, until golden brown. Let cool, then coarsely chop. 2. Combine almond milk, rice, sugar, salt, and 4 cups water in a large saucepan; scrape in vanilla seeds and add pod. Bring to a boil, reduce heat, and simmer, stirring occasionally, until rice is very tender and mixture resembles loose rice pudding or oatmeal. Remove vanilla pod. Serve porridge topped with jam and hazelnuts.", false), 
 
 
-INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, starred) 
+INSERT INTO activities (activity_name, activity_img, description, category, needed, instructions, reps, sets, total_time, below65, starred) 
 
-VALUES ("THE SUSPENSION TRAINER WORKOUT FOR BUILDING MASS", "https://bit.ly/2SOkyM2", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", ),
-("", "", "", "", "", "", "", "", "", "", );
+VALUES ("THE SUSPENSION TRAINER WORKOUT FOR BUILDING MASS", "https://bit.ly/2SOkyM2", "Working Out", "Cardio", "5 lb Weights", "Lift Weight", "5", "10", "15 minutes", false, false),
+("Jumping Jacks", "http://localhost:8080/assets/img/yoga.jpg", "Fun workout", "Working Out", "Nothing", "Jump Up and Down", "10", "15", "10 minutues", true, false);
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", ),
+-- ("", "", "", "", "", "", "", "", "", "", );
 
