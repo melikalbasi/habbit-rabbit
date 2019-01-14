@@ -4,5 +4,8 @@ $(document).ready(function() {
   $.get("/api/user_data").then(function(data) {
     console.log("this is the user data==============================================="+user_data)
     $(".member-name").text(data.name);
+    $(".member-age").text(data.age);
+    $(".member-diet").text(data.diet);
+    $(".member-email").text(data.email);
   });
 });

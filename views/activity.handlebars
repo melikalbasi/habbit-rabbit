@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav>
     <div class="navbar">
         <div class="navbar__Container">
@@ -34,11 +35,47 @@
             <button id="myBtn" class="btn btn-primary">Open</button>
             <button id="myBtn1" class="btn btn-primary">Shuffle</button>
             <button id="myBtn2" class="btn btn-primary">Favorite</button>
-        </div>
+=======
+<script type="text/javascript" src="assets/js/recipe.js"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/logout">
+        Logout
+      </a>
+      <a class="navbar-brand" href="/home">
+        Home
+      </a>
+      <a class="navbar-brand" href="/profile">
+        Profile
+      </a>
     </div>
-</div>
+  </div>
+</nav>
+<section class="hero-area">
+  <div class="hero-slides owl-carousel">
+    {{#each activities}}
+    <div class="single-hero-slide bg-img" style="background-image: url('{{activity_img}}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+              <h2 data-animation="fadeInUp" data-delay="300ms">{{activity_name}}</h2>
+              <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+              <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Activity</a>
+
+            </div>
+          </div>
+>>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</section>
 
 
+<<<<<<< HEAD
 <footer>
     <div class="containerFooter">
         <div class="containerFooter__copyright">
@@ -50,9 +87,11 @@
     </div>
 </footer>
 
+=======
+>>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
 <style>
 
-/* The Modal (background) */
+  /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -101,37 +140,39 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p><div id="modal-activity">Activity info</div></p>
+    <p>
+      <div id="modal-activity">Activity info</div>
+    </p>
   </div>
 
 </div>
 
-  <script type="text/javascript" src="../public/assets/js/signup.js"></script>
+<script type="text/javascript" src="../public/assets/js/signup.js"></script>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+  // Get the modal
+  var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
     modal.style.display = "none";
   }
-}
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 </script>

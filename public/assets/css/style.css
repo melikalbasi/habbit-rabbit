@@ -1,6 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+  /* background-color:black;  */
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%; 
+
+>>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
   background-color: #9BC18D;
   font-family: 'Bitter', serif; }
 
@@ -340,6 +350,7 @@ label {
 @media only screen and (max-width: 767px) {
   .hero-slides .owl-prev,
   .hero-slides .owl-next {
+<<<<<<< HEAD
     font-size: 30px; } }
 
 .hero-slides .owl-next {
@@ -368,6 +379,52 @@ label {
 
 .hero-slides .owl-dots .owl-dot.active {
   color: #1c8314; }
+=======
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    top: 50%;
+    margin-top: -20px;
+    left: 4%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0;
+    /* visibility: visible; */
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-bottom: 3px solid #1c8314; }
+    @media only screen and (max-width: 767px) {
+      .hero-slides .owl-prev,
+      .hero-slides .owl-next {
+        font-size: 30px; } }
+  .hero-slides .owl-next {
+    left: auto;
+    right: 4%; }
+  .hero-slides:hover .owl-prev, .hero-slides:hover .owl-next {
+    opacity: 1;
+    visibility: visible; }
+  .hero-slides .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    z-index: 10;
+    width: 80%;
+    left: 17%; }
+    .hero-slides .owl-dots .owl-dot {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-right: 10px; }
+      .hero-slides .owl-dots .owl-dot.active {
+        color: #1c8314; }
+>>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
@@ -393,6 +450,7 @@ label {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: capitalize;
+<<<<<<< HEAD
   background-color: #C16F38; }
 
 .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
@@ -550,3 +608,18 @@ span {
 .navbar__Container--welcome {
   color: #CEE0C7;
   font-size: 2em; }
+=======
+  background-color: #40ba37; }
+  .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1c8314;
+    border-color: #40ba37; }
+  #quote {
+    font-family: 'Staatliches', cursive;
+  }
+  #profile {
+    font-family: 'Pacifico', cursive;
+  }
+>>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
