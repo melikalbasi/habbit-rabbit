@@ -34,10 +34,11 @@ CREATE TABLE activities (
   description  VARCHAR(255),
 	category VARCHAR(255),
 	needed VARCHAR(255), 
-	instructions VARCHAR(555),
+	instructions VARCHAR(5000),
 	reps VARCHAR(255), 
 	sets VARCHAR(255), 
 	total_time VARCHAR(255), 
+	below65 BOOLEAN,
 	starred BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

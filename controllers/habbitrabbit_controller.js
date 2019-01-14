@@ -13,40 +13,48 @@ router.get("/signup", function (req, res) {
 })
 
 router.get("/login", function (req, res) {
-  console.log(req.user);
   if (req.user) {
-    res.render("members");
+    res.render("profile");
   } else {
     res.render("login");
   }
 });
 
-router.get("/members", function (req, res) {
-  res.render("members");
+router.get("/profile", function (req, res) {
+  res.render("profile");
 })
 
 router.get("/home", function (req, res) {
   res.render("home");
 });
 
-// router.get("/recipe/:category", function (req, res) {
-//   db.Recipe.findAll({ where: { category: req.params.category } }).then(function (recipes) {
-//     var recipeHolder = []
-//     for (var i = 0; i < recipes.length; i++) {
-//       recipeHolder.push(recipes[i].dataValues)
-//     }
-//     console.log("=======\n", recipeHolder)
-//     var hbsObj = {
-//       recipes: recipeHolder
-//     }
-//     res.render("recipe", hbsObj);
 
-//   })
+router.get("/recipe/:category", function (req, res) {
+  db.Recipe.findAll({ where: { category: req.params.category } }).then(function (recipes) {
+    var recipeHolder = []
+    for (var i = 0; i < recipes.length; i++) {
+      recipeHolder.push(recipes[i].dataValues)
+    }
+    var hbsObj = {
+      recipes: recipeHolder
+    }
+    res.render("recipe", hbsObj);
 
-// })
+  })
+
+})
 
 router.get("/activity", function (req, res) {
-  res.render("activity");
+  var isOlder = false;
+  if (req.user.age >= 65) {
+    isOlder = true;
+  }
+  db.Activity.findAll({ where: { below65: isOlder } }).then(function (activities) {
+    var hbsObject = {
+      activities: activities
+    }
+    res.render("activity", hbsObject);
+  })
 })
 
 router.get("/favactivities", function (req, res) {
@@ -79,12 +87,6 @@ router.post("/favrecipes", function (req, res) {
 
 })
 
-router.get("/userprofile", function (req, res) {
-  var hbsObject = {
-    user: req.user
-  }
-  res.render("survey", hbsObject);
-})
 
 
 
@@ -136,6 +138,9 @@ router.get("/api/user_data", function (req, res) {
     // Otherwise send back the user's email and id
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
+      name: req.user.name,
+      age: req.user.age,
+      diet: req.user.diet,
       email: req.user.email,
       id: req.user.id
     });
@@ -147,17 +152,13 @@ router.get("/recipe", function (req, res) {
     for (var i = 0; i < recipes.length; i++) {
       recipeHolder.push(recipes[i].dataValues)
     }
-    console.log("=======\n", recipeHolder)
-    var hbsObj = {
-      recipes: recipeHolder
-    }
-    res.render("recipe", hbsObj);
-
-    console.log("helllooooooooo" + req.user.diet);
-
-
+        var hbsObj = {
+        recipes: recipeHolder
+      }
+      res.render("recipe", hbsObj);
+    })
   })
+  
+  // Export routes for server.js to use.
+  module.exports = router;
 
-})
-// Export routes for server.js to use.
-module.exports = router;
