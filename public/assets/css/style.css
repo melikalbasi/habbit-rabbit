@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-=======
+
   /* background-color:black;  */
   text-align: center;
 }
@@ -10,7 +9,6 @@ body {
 html {
   font-size: 62.5%; 
 
->>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
   background-color: #9BC18D;
   font-family: 'Bitter', serif; }
 
@@ -350,7 +348,7 @@ label {
 @media only screen and (max-width: 767px) {
   .hero-slides .owl-prev,
   .hero-slides .owl-next {
-<<<<<<< HEAD
+
     font-size: 30px; } }
 
 .hero-slides .owl-next {
@@ -379,8 +377,8 @@ label {
 
 .hero-slides .owl-dots .owl-dot.active {
   color: #1c8314; }
-=======
-    background-color: transparent;
+
+/*     background-color: transparent;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -393,8 +391,10 @@ label {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
-    opacity: 0;
+    opacity: 0; */
+
     /* visibility: visible; */
+
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-bottom: 3px solid #1c8314; }
@@ -424,7 +424,6 @@ label {
       margin-right: 10px; }
       .hero-slides .owl-dots .owl-dot.active {
         color: #1c8314; }
->>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
@@ -450,7 +449,7 @@ label {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: capitalize;
-<<<<<<< HEAD
+
   background-color: #C16F38; }
 
 .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
@@ -608,7 +607,7 @@ span {
 .navbar__Container--welcome {
   color: #CEE0C7;
   font-size: 2em; }
-=======
+
   background-color: #40ba37; }
   .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
     font-size: 16px;
@@ -616,10 +615,22 @@ span {
     color: #ffffff;
     background-color: #1c8314;
     border-color: #40ba37; }
+
+
+.modal-content{
+    background-color: black;
+}
+.modal-body{
+    font-size: 22px;
+}
+
+.cooking-time{
+    float: left;
+}
   #quote {
     font-family: 'Staatliches', cursive;
   }
   #profile {
     font-family: 'Pacifico', cursive;
   }
->>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
+

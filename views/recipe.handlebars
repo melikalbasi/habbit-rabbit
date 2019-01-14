@@ -24,39 +24,44 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-<<<<<<< HEAD
                             <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
                             <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
-                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Recipe</a>
+                            <!--                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>-->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="{{this.instructions}}">Get Recipe!</button>
 
-=======
+                        </div>
+
                             <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
                             <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
                             <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
                             <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
->>>>>>> cd4fc42fa69f902b21342b29549c46d396fe0b4c
                     </div>
+
                 </div>
+
             </div>
+
         </div>
         {{/each}}
     </div>
 </section>
 
-{{!-- 
- <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>
-            <div id="modal-activity">
-                {{this.recipe_name}}
-                <img src={{this.recipe_img}}>
-                {{this.ingredients}}
-                {{this.instructions}}
-                </div>
-        </p>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{recipe_name}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <p id="cooking-time">Cooking time: 10Min</p>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
+</div>
 
-</div> --}}
