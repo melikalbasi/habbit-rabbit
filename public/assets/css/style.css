@@ -1,6 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+
+  /* background-color:black;  */
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%; 
+
+
   background-color: #9BC18D;
   font-family: 'Bitter', serif; }
 
@@ -524,6 +533,7 @@ span {
       width: 100%;
       height: auto; }
 
+
 .navbar__Container {
   width: 100%; }
   .navbar__Container--header {
@@ -578,3 +588,25 @@ span {
     font-size: 2em; }
   .navbar__Container--quote {
     color: #CEE0C7; }
+
+  .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1c8314;
+    border-color: #40ba37; }
+
+.modal-body{
+    font-size: 22px;
+}
+
+.cooking-time{
+    float: left;
+}
+  #quote {
+    font-family: 'Staatliches', cursive;
+  }
+  #profile {
+    font-family: 'Pacifico', cursive;
+  }
+
