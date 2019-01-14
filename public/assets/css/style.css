@@ -298,10 +298,6 @@ label {
     font-size: 16px;
     font-weight: 600;
     opacity: 0;
-<<<<<<< HEAD
-    /* visibility: visible; */
-=======
->>>>>>> 5c10432e7a0ba7c0d6c1fd895b3b921d7e9c1d6b
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-bottom: 3px solid #1c8314; }
@@ -361,3 +357,14 @@ label {
     color: #ffffff;
     background-color: #1c8314;
     border-color: #40ba37; }
+
+.modal-content{
+    background-color: black;
+}
+.modal-body{
+    font-size: 22px;
+}
+
+.cooking-time{
+    float: left;
+}
