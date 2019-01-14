@@ -8,6 +8,6 @@ module.exports = function(sequelize, DataTypes){
         ingredients: DataTypes.STRING,
         instructions: DataTypes.STRING,
 
-    },{timestamps: false})
+     },{timestamps: false})
 return FavoriteRecipes; 
-}
+} 
