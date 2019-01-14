@@ -15,6 +15,18 @@ CREATE TABLE recipes (
     
 );
 
+CREATE TABLE favoriteRecipes (
+	id INT AUTO_INCREMENT NOT NULL, 
+	userID VARCHAR(255), 
+	recipe_name VARCHAR(255),
+  recipe_img VARCHAR(255),
+	category VARCHAR(255),
+  description VARCHAR(255),
+  ingredients VARCHAR(555),
+	instructions VARCHAR(5000),
+	PRIMARY KEY (id)
+)
+
 CREATE TABLE activities (
 	id INT AUTO_INCREMENT NOT NULL,
 	activity_name VARCHAR(255),

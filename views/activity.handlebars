@@ -30,23 +30,27 @@
         </nav>
 </header>
 
-<div class="container">
-    <p>
-        <div id="activity-title">Yoga</div>
-    </p>
-    <div class="card" style="width:400px">
-        <img id="activity-image" class="card-img-top" src="assets/img/yoga.jpg" alt="Card image" style="width:100%">
-        <div class="card-body">
-            <p class="card-text">
-                <div id="activity-info">Intensity Level: Moderate, Duration: 1 hour, Stress Relief</div>
-            </p>
-            <button id="myBtn" class="btn btn-primary">Open</button>
-            <button id="myBtn1" class="btn btn-primary">Shuffle</button>
-            <button id="myBtn2" class="btn btn-primary">Favorite</button>
-        </div>
-    </div>
-</div>
+<script type="text/javascript" src="assets/js/activity.js"></script>
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        {{#each recipes}}
+        <div class="single-hero-slide bg-img" style="background-image: url('{{recipe_img}}');">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
 
 <footer>
     <div class="footer-copyright">
