@@ -21,6 +21,16 @@
         &--link1:hover{
             color: $color-secondary-dark;
         }
+        &--link3{
+            font-size: 2em;
+            padding: .6em 1em .6em 1em;
+            background-color: $color-tertiary;
+            color: $color-primary-dark;
+            border-right: 1px solid $color-primary-dark;  
+        }
+        &--link3:hover{
+            color: $color-secondary-dark;
+        }
         &--link2{
             font-size: 2em;
             padding: .6em 1em .6em 1em;
