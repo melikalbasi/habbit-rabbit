@@ -20,6 +20,7 @@ html {
       font-size: 37.5%; } }
 
 a {
+  color: white;
   text-decoration: none;
   outline: none; }
 
@@ -35,6 +36,7 @@ a:visited {
 
 a:hover {
   /* Applies to links under the pointer */
+  color: white;
   text-decoration: none;
   outline: none; }
 
@@ -91,8 +93,7 @@ a:active {
       border-radius: 2em;
       font-family: 'Bitter', serif;
       color: #CEE0C7;
-      color: #C16F38;
-      background-color: transparent;
+      background-color: #CEE0C7;
       padding: 1em 7em;
       margin: 2em; }
     .splash__Button--button:active {
