@@ -51,13 +51,8 @@ router.get("/activity", function(req, res){
   var isOlder = false;
   if (req.user.age >= 65) {
     isOlder = true;
-
   }
     db.Activity.findAll({where:{ below65: isOlder}}).then(function(activities) {
-      // var activityHolder = [];
-      // for (var i=0; i < activities.length; i++) {
-        // activityHolder.push(activities[i].dataValues)
-      // }
       var hbsObject = {
         activities: activities
       }
@@ -130,6 +125,9 @@ router.get("/userprofile", function(req, res) {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
+        name: req.user.name,
+        age: req.body.age,
+        diet: req.body.diet,
         email: req.user.email,
         id: req.user.id
       });
