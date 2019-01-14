@@ -1,21 +1,33 @@
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-      <a class="navbar-brand" href="/home">
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
+                    Logout
+                </a>
+                <a class="navbar__Container--link2" href="/home">
                     Home
                 </a>
+            </div>
+            <!--navbar__Container_header-->
+            <div class="navbar__Container--main">
+
+                <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
+                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+            </div>
+            <!--navbar__Containermain-->
+        </div>
+        <!--navbar__Container-->
     </div>
-  </div>
 </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span>! You're already logged in!</h2>
-      </div>
+
+<footer>
+    <div class="containerFooter">
+        <div class="containerFooter__copyright">
+            © habit rabbit enterprises
+        </div>
+        <div class="containerFooter__logo">
+            <img class="containerFooter__logo--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+        </div>
     </div>
-  </div>
-
-
+</footer>
