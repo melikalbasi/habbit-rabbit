@@ -1,5 +1,21 @@
-
 <script type="text/javascript" src="assets/js/recipe.js"></script>
+<script type="text/javascript" src="assets/js/recipe.js"></script>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/logout">
+                Logout
+            </a>
+            <a class="navbar-brand" href="/home">
+                Home
+            </a>
+            <a class="navbar-brand" href="/profile">
+                Profile
+            </a>
+        </div>
+    </div>
+</nav>
+
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
         {{#each recipes}}
@@ -10,13 +26,32 @@
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
                             <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
                             <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
-                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
+                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See
+                                Receipe</a>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
         {{/each}}
     </div>
 </section>
+
+{{!-- 
+ <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+            <div id="modal-activity">
+                {{this.recipe_name}}
+                <img src={{this.recipe_img}}>
+                {{this.ingredients}}
+                {{this.instructions}}
+                </div>
+        </p>
+    </div>
+
+</div> --}}

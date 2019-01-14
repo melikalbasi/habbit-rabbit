@@ -9,8 +9,8 @@ module.exports = function(sequelize, DataTypes){
         category: DataTypes.STRING,
         needed: DataTypes.STRING,
         instructions: DataTypes.STRING,
-        reps: DataTypes.INTEGER,
-        sets: DataTypes.INTEGER,
+        reps: DataTypes.STRING,
+        sets: DataTypes.STRING,
         total_time: DataTypes.STRING,
         below65: DataTypes.BOOLEAN,
         starred: {type: DataTypes.BOOLEAN, defaultValue: false}

@@ -15,14 +15,14 @@ router.get("/signup", function(req,res){
 router.get("/login", function(req, res){
   console.log(req.user);
   if (req.user){
-    res.render("members");
+    res.render("profile");
   } else {
     res.render("login");
   }
 });
 
-router.get("/members", function(req, res){
-  res.render("members");
+router.get("/profile", function(req, res){
+  res.render("profile");
 })
 
 router.get("/home", function(req, res) {
