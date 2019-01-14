@@ -1,23 +1,51 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-      <a class="navbar-brand" href="/home">
-        Home
-      </a>
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
+                    Logout
+                </a>
+                <a class="navbar__Container--link3" href="/profile">
+                    Profile
+                </a>
+                <a class="navbar__Container--link2" href="/home">
+                    Home
+                </a>
+            </div>
+            
+            <div class="navbar__Container--main">
+
+                <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
+
+                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+
+                <text class="navbar__Container--quote" id="logo"><h1 id="quote"></h1></text>
+               
+            </div>
+        </div>
     </div>
-  </div>
+    
 </nav>
-<div class="container">
+<div class="profile">
+<div class="profile__container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3" id="profile">
-      <h2>Welcome <span class="member-name"></span>!</h2>
-      <h4>Your age: <span class="member-age"></span></h4>
-      <h4>Your diet: <span class="member-diet"></span></h4>
-      <h4>Email: <span class="member-email"></span></h4>
+      <text class="profile__container--heading">Welcome <span class="member-name"></span>!</text> <br>
+      <text class="profile__container--list">Your age: <span class="member-age"></span></text> <br>
+      <text class="profile__container--list">Your diet: <span class="member-diet"></span></text> <br>
+      <text class="profile__container--list">Email: <span class="member-email"></span></text> <br>
 
     </div>
   </div>
 </div>
+</div>
+<footer>
+    <div class="containerFooter">
+        <div class="containerFooter__copyright">
+            © habit rabbit enterprises
+        </div>
+        <div class="containerFooter__logo">
+            <img class="containerFooter__logo--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+        </div>
+    </div>
+</footer>
