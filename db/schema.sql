@@ -15,15 +15,11 @@ CREATE TABLE recipes (
     
 );
 
-CREATE TABLE favoriteRecipes (
+CREATE TABLE userData (
 	id INT AUTO_INCREMENT NOT NULL, 
 	userID VARCHAR(255), 
-	recipe_name VARCHAR(255),
-  recipe_img VARCHAR(255),
-	category VARCHAR(255),
-  description VARCHAR(255),
-  ingredients VARCHAR(555),
-	instructions VARCHAR(5000),
+    favorite_recipe VARCHAR(255),
+    favorite_activity VARCHAR(255),
 	PRIMARY KEY (id)
 )
 

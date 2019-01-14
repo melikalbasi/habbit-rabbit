@@ -24,7 +24,7 @@ $(document).ready(function() {
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
         var data = recipient.split("%");  
-//        console.log(data);
+        //        console.log(data);
         var modal = $(this)
         modal.find('.modal-header').text("Recipe!")
         modal.find('.modal-body').text("")
@@ -32,38 +32,55 @@ $(document).ready(function() {
         modal.find('.modal-body input').val(recipient)
     })
 
-    
-        function makeUL(array) {
-            var list = document.createElement('ul');
-            for (var i = 0; i < array.length; i++) {
-                var item = document.createElement('li');         item.appendChild(document.createTextNode(array[i]));
-                list.appendChild(item);
-            }
-            return list;
 
+    function makeUL(array) {
+        var list = document.createElement('ul');
+        for (var i = 0; i < array.length; i++) {
+            var item = document.createElement('li');         item.appendChild(document.createTextNode(array[i]));
+            list.appendChild(item);
         }
+        return list;
+
+    }
 
 
 
-    $(".favoriteRecipe").on("click", function(){
+//    $(".favme").on("click", function(){
+//        var newFave = {};
+//        newFave.recipe_img = $(".recipeImage").data("image");
+//        newFave.recipe_name = $(".recipeName").text(); 
+//        newFave.description = $(".recipeDescription").text();
+//
+//        console.log(newFave);
+//
+//        $.post("/favrecipes", newFave).then(function(data) {
+//            //   window.location.replace(data);
+//            console.log(data);
+//            // If there's an error, handle it by throwing up a boostrap alert
+//        }).catch(function(err){
+//            console.log(err);
+//        });
+//
+//
+//    })
+
+    // Favorite Button - Heart
+    $('.favme').on("click", function() {
+        $(this).toggleClass('active');
         var newFave = {};
-        newFave.recipe_img = $(".recipeImage").data("image");
-        newFave.recipe_name = $(".recipeName").text(); 
-        newFave.description = $(".recipeDescription").text();
-
+        newFave.name = this.id;
         console.log(newFave);
-        
-            $.post("/favrecipes", newFave).then(function(data) {
-            //   window.location.replace(data);
-              console.log(data);
-              // If there's an error, handle it by throwing up a boostrap alert
-            }).catch(function(err){
-                console.log(err);
-            });
-       
-        
-    })
+    });
 
+    /* when a user clicks, toggle the 'is-animating' class */
+    $(".favme").on('click touchstart', function(){
+        $(this).toggleClass('is_animating');
+    });
+
+    /*when the animation is over, remove the class*/
+    $(".favme").on('animationend', function(){
+        $(this).toggleClass('is_animating');
+    });
 
 })
 
