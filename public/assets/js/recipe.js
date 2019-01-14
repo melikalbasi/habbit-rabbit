@@ -17,14 +17,13 @@ $(document).ready(function() {
         },
 
     })
-<<<<<<< HEAD
     $('#exampleModal').on('shown.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
         var recipient = button.data('whatever')
         // Extract info from data-* attributes
         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-        var data = recipient.split(",");  
+        var data = recipient.split("%");  
 //        console.log(data);
         var modal = $(this)
         modal.find('.modal-header').text("Recipe!")
@@ -44,8 +43,7 @@ $(document).ready(function() {
 
         }
 
-})
-=======
+
 
     $(".favoriteRecipe").on("click", function(){
         var newFave = {};
@@ -134,5 +132,3 @@ if ($.fn.owlCarousel) {
         smartSpeed: 1000
     });
 }
-
->>>>>>> 5c84244cfa7820a2859cfb71a3ec724f7ff9c565
