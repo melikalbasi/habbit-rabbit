@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript" src="assets/js/recipe.js"></script>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -14,6 +15,48 @@
         </div>
     </div>
 </nav>
+=======
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
+                    Logout
+                </a>
+                <a class="navbar__Container--link3" href="/profile">
+                    Profile
+                </a>
+                <a class="navbar__Container--link2" href="/home">
+                    Home
+                </a>
+            </div>
+            
+            <div class="navbar__Container--main">
+
+                <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
+
+                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+
+                <text class="navbar__Container--quote" id="logo"><h1 id="quote"></h1></text>
+               
+            </div>
+        </div>
+    </div>
+    
+</nav>
+
+section class="hero-area">
+  <div class="hero-slides owl-carousel">
+    {{#each activities}}
+    <div class="single-hero-slide bg-img" style="background-image: url('{{activity_img}}');">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+              <h2 data-animation="fadeInUp" data-delay="300ms">{{activity_name}}</h2>
+              <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+              <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Activity</a>
+>>>>>>> 00287965f343c51bfc6a5f16688e89f1d942a760
 
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
@@ -32,11 +75,16 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
+          </div>
+>>>>>>> 00287965f343c51bfc6a5f16688e89f1d942a760
         </div>
         {{/each}}
     </div>
 </section>
 
+<<<<<<< HEAD
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content"> 
@@ -54,5 +102,64 @@
             </div>
         </div>
     </div>
+=======
+
+<style>
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>
+      <div id="modal-activity">Activity info</div>
+    </p>
+  </div>
+
+>>>>>>> 00287965f343c51bfc6a5f16688e89f1d942a760
 </div>
 

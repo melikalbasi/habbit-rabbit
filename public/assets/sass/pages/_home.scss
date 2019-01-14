@@ -5,7 +5,7 @@
     align-content: center;
     font-size: 2em;
     &__Container{
-        width: 600px;
+        // width: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -80,5 +80,6 @@
             color: $color-primary-light;
             background-color: $color-secondary;
         }
+       
     }
 }

@@ -1,0 +1,31 @@
+.member-name{
+    font-size: inherit;
+    color: inherit;
+}
+.member-age{
+    font-size: inherit;
+    color: inherit;  
+}
+.member-diet{
+    font-size: inherit;
+    color: inherit;  
+}
+.member-email{
+    font-size: inherit;
+    color: inherit;  
+}
+
+.profile{
+    &__container{
+        &--heading{
+            font-size: 3.5em;
+            color: $color-primary-darkest;
+
+        }
+        &--list{
+            font-size: 2em;
+            color: $color-primary-light;
+
+        }
+    }
+}

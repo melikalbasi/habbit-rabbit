@@ -82,7 +82,7 @@ $(document).ready(function() {
         $(this).toggleClass('is_animating');
     });
 
-})
+
 
 // :: 5.0 Sliders Active Code
 //if ($.fn.owlCarousel) {

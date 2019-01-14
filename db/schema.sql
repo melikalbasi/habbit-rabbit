@@ -21,7 +21,7 @@ CREATE TABLE userData (
     favorite_recipe VARCHAR(255),
     favorite_activity VARCHAR(255),
 	PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE activities (
 	id INT AUTO_INCREMENT NOT NULL,
