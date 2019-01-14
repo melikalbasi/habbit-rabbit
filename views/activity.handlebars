@@ -1,65 +1,25 @@
-<header>
+<script type="text/javascript" src="assets/js/recipe.js"></script>
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        {{#each activities}}
+        <div class="single-hero-slide bg-img" style="background-image: url('{{activity_img}}');">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 data-animation="fadeInUp" data-delay="300ms">{{activity_name}}</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Activity</a>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/logout">
-                    Logout
-                </a>
-                <a class="navbar-brand" href="/home">
-                    Home
-                </a>
-            </div>
-        </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>Welcome <span class="member-name"></span></h2>
                     </div>
                 </div>
             </div>
-            <div class="nav-wrapper black accent-2 z-depth-5">
-
-                <div class="col s12">
-                    <a href="/home" class="brand-logo" id="logo">
-                        <h1 class="z-depth-5">Habit Rabbit</h1>
-                    </a>
-                </div>
-            </div>
-        </nav>
-</header>
-
-{{#each activities}}
-<img src={{activity_img}}/>
-<p>{{description}}</p>
-{{/each}}
-
-<div class="container">
-    <p>
-        <div id="activity-title">Yoga</div>
-    </p>
-    <div class="card" style="width:400px">
-        <img id="activity-image" class="card-img-top" src="assets/img/yoga.jpg" alt="Card image" style="width:100%">
-        <div class="card-body">
-            <p class="card-text">
-                <div id="activity-info">Intensity Level: Moderate, Duration: 1 hour, Stress Relief</div>
-            </p>
-            <button id="myBtn" class="btn btn-primary">Open</button>
-            <button id="myBtn1" class="btn btn-primary">Shuffle</button>
-            <button id="myBtn2" class="btn btn-primary">Favorite</button>
         </div>
-    </div>
-</div>
-
-
-<footer>
-    <div class="footer-copyright">
-        <div class="container">
-            © habit rabbit enterprises
         </div>
+        {{/each}}
     </div>
-</footer>
+</section>
+
 
 <style>
 
