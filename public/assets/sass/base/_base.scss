@@ -25,6 +25,7 @@ html {
 }
 // reseting links style
 a{
+  color: white;
   text-decoration:  none;
   outline: none;
   
@@ -45,6 +46,7 @@ a:visited {
   } 
 a:hover   {
   /* Applies to links under the pointer */
+  color: white;
   text-decoration:  none;
   outline: none;
   

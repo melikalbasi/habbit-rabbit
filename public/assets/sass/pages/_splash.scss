@@ -54,13 +54,15 @@
             font-family: 'Bitter', serif;
             // font-size: 4em;
             color: $color-primary-light;
-            color: $color-secondary;
-            background-color: transparent;
+            background-color: $color-primary-light;
+            
+            
             padding: 1em 7em ;
             margin: 2em;
             
         }
         &--button:active{
+           
             transform: translateY(1px);
             filter: saturate(150%);
         }

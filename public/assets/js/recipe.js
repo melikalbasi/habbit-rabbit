@@ -65,7 +65,7 @@ $(document).ready(function() {
     })
 
 
-})
+
 
 // :: 5.0 Sliders Active Code
 //if ($.fn.owlCarousel) {
