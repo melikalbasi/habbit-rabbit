@@ -1,5 +1,3 @@
-// var survey = require("../public/assets/js/survey.js");
-
 module.exports = function(sequelize, DataTypes){
     var Recipe = sequelize.define("Recipe", {
         recipe_name: DataTypes.STRING,

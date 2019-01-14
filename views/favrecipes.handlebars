@@ -30,7 +30,74 @@
         </nav>
 </header>
 
-<div class="favorites-container"></div>
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        {{#each recipes}}
+        <div data-image = {{this.recipe_img}} class="single-hero-slide bg-img recipeImage" style="background-image: url('{{recipe_img}}');">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
+                            <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
+                            <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
+                            <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+
+
+
+
+    <!-- ##### Best Receipe Area Start ##### -->
+    <section class="best-receipe-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>Favorite Receipes</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Best Receipe Area -->
+
+                {{#each favoriterecipes}}
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-best-receipe-area mb-30">
+                        <img src="{{recipe_img}}" alt="">
+                        <div class="receipe-content">
+                            
+                            <div class="ratings">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+                
+
+                
+
+              
+               
+
+           
+            </div>
+        </div>
+    </section>
+    <!-- ##### Best Receipe Area End ##### -->
+
 
 <footer>
     <div class="footer-copyright">
