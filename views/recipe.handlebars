@@ -19,17 +19,15 @@
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
         {{#each recipes}}
-        <div class="single-hero-slide bg-img" style="background-image: url('{{recipe_img}}');">
+        <div data-image = {{this.recipe_img}} class="single-hero-slide bg-img recipeImage" style="background-image: url('{{recipe_img}}');">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
-                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
-                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See
-                                Receipe</a>
-
-                        </div>
+                            <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
+                            <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
+                            <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
+                            <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
                     </div>
                 </div>
             </div>
