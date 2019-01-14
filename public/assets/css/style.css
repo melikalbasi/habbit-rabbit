@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   /* background-color:black;  */
   text-align: center;
 }
@@ -449,7 +448,6 @@ label {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: capitalize;
-
   background-color: #C16F38; }
 
 .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
@@ -607,7 +605,6 @@ span {
 .navbar__Container--welcome {
   color: #CEE0C7;
   font-size: 2em; }
-
   background-color: #40ba37; }
   .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
     font-size: 16px;
@@ -616,10 +613,6 @@ span {
     background-color: #1c8314;
     border-color: #40ba37; }
 
-
-.modal-content{
-    background-color: black;
-}
 .modal-body{
     font-size: 22px;
 }
@@ -633,4 +626,3 @@ span {
   #profile {
     font-family: 'Pacifico', cursive;
   }
-

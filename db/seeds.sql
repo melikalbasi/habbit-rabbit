@@ -37,6 +37,3 @@ VALUES ("PLANK ROW FOR TONING ABS", "https://bit.ly/2sr1xE0", "This workout targ
 ("TOE DIPS", "https://bit.ly/2McJcni", "This is a great exercise that will strengthen your deep core muscles, as well as your hip flexors.", "Strengthening muscles", "No equipment needed", "Start by lying on your back with your feet flat on the floor, hip distance apart. Without letting your body shift, engage your abdominals and exhale while bringing your right leg up into a table top position (90 degree angle). Take a breath and bring your left leg up to meet it. Hold for about five seconds, and then slowly place your right leg back down, followed by your left. Repeat, switching up the starting leg each time.", "10 reps", "2 sets", "20 minutues", true, false);
 
 
-
-
-
