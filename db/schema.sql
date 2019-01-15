@@ -25,7 +25,7 @@ CREATE TABLE favoriteRecipes (
   ingredients VARCHAR(555),
 	instructions VARCHAR(5000),
 	PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE activities (
 	id INT AUTO_INCREMENT NOT NULL,
@@ -47,3 +47,4 @@ CREATE TABLE activities (
 
 SELECT * FROM activities;
 SELECT * FROM recipes;
+SELECT * FROM favoriteRecipes;

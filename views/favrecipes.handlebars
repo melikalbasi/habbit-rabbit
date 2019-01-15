@@ -1,108 +1,46 @@
-<header>
+<video autoplay muted loop id="splashVideo">
+    <source src="/assets/images/Keep_Running.mp4" type="video/mp4">
+</video>
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+                
+            <div class="navbar__Container--main">
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/logout">
+                <h1><text class="navbar__Container--welcome">Hello, <span class="member-name"></span>! </text></h1>
+
+                <h3><text class="navbar__Container--quote" id="logo"><h1 id="quote"></text></h3>
+               
+            </div>
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
                     Logout
                 </a>
-                <a class="navbar-brand" href="/logout">
+
+                <a class="navbar__Container--link3" href="/profile">
+                    Profile
+                </a>
+
+                <a class="navbar__Container--link2" href="/home">
                     Home
                 </a>
             </div>
         </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>Welcome <span class="member-name"></span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-wrapper black accent-2 z-depth-5">
-
-                <div class="col s12">
-                    <a href="/home" class="brand-logo" id="logo">
-                        <h1 class="z-depth-5">Habit Rabbit</h1>
-                    </a>
-                </div>
-            </div>
-        </nav>
-</header>
-
-<section class="hero-area">
-    <div class="hero-slides owl-carousel">
-        {{#each recipes}}
-        <div data-image = {{this.recipe_img}} class="single-hero-slide bg-img recipeImage" style="background-image: url('{{recipe_img}}');">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
-                            <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
-                            <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
-                            <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        {{/each}}
     </div>
-</section>
+    
+</nav>
 
 
-
-
-    <!-- ##### Best Receipe Area Start ##### -->
-    <section class="best-receipe-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h3>Favorite Receipes</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Best Receipe Area -->
-
-                {{#each favoriterecipes}}
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="{{recipe_img}}" alt="">
-                        <div class="receipe-content">
-                            
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{/each}}
-                
-
-                
-
-              
-               
-
-           
-            </div>
-        </div>
-    </section>
-    <!-- ##### Best Receipe Area End ##### -->
-
-
-<footer>
-    <div class="footer-copyright">
-        <div class="container">
-            © habit rabbit enterprises
+<div class="favorites-container">
+    {{#each recipes}}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{recipe_img}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{recipe_name}}</h5>
+            <p class="card-text">{{recipe_description}}</p>
+            <a href="#" class="btn btn-primary">See Recipe!</a>
         </div>
     </div>
-</footer>
+    {{/each}}
+</div>
+

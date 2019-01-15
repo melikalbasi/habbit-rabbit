@@ -1,19 +1,36 @@
-<script type="text/javascript" src="assets/js/recipe.js"></script>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-      <a class="navbar-brand" href="/home">
-        Home
-      </a>
-      <a class="navbar-brand" href="/profile">
-        Profile
-      </a>
+<video autoplay muted loop id="splashVideo">
+    <source src="/assets/images/Keep_Running.mp4" type="video/mp4">
+</video>
+<nav>
+    <div class="navbar">
+        <div class="navbar__Container">
+                
+            <div class="navbar__Container--main">
+
+                <h1><text class="navbar__Container--welcome">Hello, <span class="member-name"></span>! </text></h1>
+
+                <h3><text class="navbar__Container--quote" id="logo"><h1 id="quote"></text></h3>
+               
+            </div>
+            <div class="navbar__Container--header">
+                <a class="navbar__Container--link1" href="/logout">
+                    Logout
+                </a>
+
+                <a class="navbar__Container--link3" href="/profile">
+                    Profile
+                </a>
+
+                <a class="navbar__Container--link2" href="/home">
+                    Home
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
+    
 </nav>
+
+
 <section class="hero-area">
   <div class="hero-slides owl-carousel">
     {{#each activities}}

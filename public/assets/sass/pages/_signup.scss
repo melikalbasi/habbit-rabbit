@@ -1,9 +1,5 @@
 .containerSignUp{
-    // width: 70%;
-    // display: flex;
-    // // flex-direction: column;
-    // justify-content: center;
-    // align-content: center; 
+
     font-family: 'Bitter', serif;
     &__heading{
         text-align: center;
@@ -68,6 +64,8 @@ label{
 }
 
 .btn_signUp:hover{
+    text-decoration: none; 
+    outline: none; 
     color: $color-secondary;
     background-color: $color-primary-light;
     border: solid 2px $color-secondary;
@@ -77,6 +75,7 @@ label{
             display: inline-block;
             text-align: center;
             text-decoration: none;
+            outline: none;
             border: solid 2px transparent;
             border-radius: 2em;
             font-family: 'Bitter', serif;
@@ -102,32 +101,3 @@ label{
 }
 
 
-
-// a{
-// text-decoration:  none;
-// font-size: 2em;
-// color: $color-primary-light;
-
-// }
-// a:link {
-// /* Applies to all unvisited links */
-// text-decoration:  none;
-// color: $color-primary-light;
-
-// } 
-// a:visited {
-// /* Applies to all visited links */
-// text-decoration:  none;
-
-// } 
-// a:hover   {
-// /* Applies to links under the pointer */
-// text-decoration:  none;
-// color: $color-secondary;
-
-// } 
-// a:active  {
-// /* Applies to activated links */
-// text-decoration:  none;
-
-// } 
