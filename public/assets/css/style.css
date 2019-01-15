@@ -16,6 +16,7 @@ html {
   background-color: transparent;
 }
 
+
 html {
   font-size: 62.5%; }
   @media only screen and (min-width: 112.5em) {
@@ -69,6 +70,39 @@ a:active {
   min-width: 100%;
   min-height: 100%; }
 
+a {
+  color: white;
+  text-decoration: none;
+  outline: none; }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  outline: none; }
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration: none;
+  outline: none; }
+
+a:hover {
+  /* Applies to links under the pointer */
+  color: white;
+  text-decoration: none;
+  outline: none; }
+
+a:active {
+  /* Applies to activated links */
+  text-decoration: none;
+  outline: none; }
+
+#splashVideo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
 .splash {
   display: flex;
   flex-direction: column;
@@ -95,12 +129,14 @@ a:active {
     .splash__Logo--img {
       width: 600px; } }
   .splash__Button {
+
     font-family: 'Comfortaa', cursive;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     color: rgba(250, 250, 250, .7);
     transform: translate(-50%, -50%);
   }
+
     .splash__Button--button {
       padding: 0;
       border: none;
@@ -111,6 +147,7 @@ a:active {
       display: inline-block;
       text-align: center;
       text-decoration: none;
+
       border: solid 2px rgba(250, 250, 250, .7);
       border-radius: 10em;
       font-family: 'Comfortaa', cursive;
@@ -119,29 +156,37 @@ a:active {
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms;
       color: rgba(250, 250, 250, .7);
+
       padding: 1em 7em;
       margin: 2em; }
     .splash__Button--button:active {
       transform: translateY(1px);
       filter: saturate(150%); }
     .splash__Button--button:hover {
+
       background-color: rgba(250, 250, 250, .7);
       color:black;
       border: solid 2px transparent; }
+
     .splash__Button--text {
       text-decoration: none;
       outline: none;
       font-size: 2em;
+
       color: rgba(250, 250, 250, .7); 
       margin-bottom: 0;}
+
     .splash__Button--text:link {
       text-decoration: none;
       outline: none;
       font-size: 2em;
+
       color: rgba(250, 250, 250, .7); }
 
 #habit {
   color: rgba(250, 250, 250, .7); }
+
+
 
 #slider {
   position: absolute;
@@ -243,6 +288,7 @@ label {
 
 .btn_signUp:hover {
 
+
   text-decoration: none;
   outline: none;
   color: white;
@@ -253,6 +299,7 @@ label {
 }
 
 a.btn_logIn,
+
 
 .btn_logIn {
 
@@ -266,7 +313,9 @@ a.btn_logIn,
   text-align: center;
   text-decoration: none;
   outline: none;
+
   border: solid 2px rgba(250, 250, 250, .7);
+
   border-radius: 2em;
   font-family: 'Comfortaa', cursive;
   box-shadow: 0px 10px 100px white;;
@@ -314,6 +363,7 @@ a.btn_logIn,
 
 .containerLogIn__message {
 
+
   font-size: 3.5rem;
   color: black; 
   box-shadow: 0px 10px 100px white;
@@ -331,6 +381,7 @@ a.btn_logIn,
   margin-bottom:5rem;
 }
 
+
 .hero-area {
   position: relative;
   z-index: 1;
@@ -342,6 +393,7 @@ a.btn_logIn,
   z-index: 1; }
 
 .hero-slides .single-hero-slide {
+
   width: auto;
   height: 100vh;
   background-repeat: no-repeat;
@@ -355,6 +407,7 @@ a.btn_logIn,
    */
   border: 5px solid rgba(250, 250, 250, .7);
 }
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-slides .single-hero-slide {
@@ -414,6 +467,7 @@ a.btn_logIn,
   opacity: 0;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
+
   border-bottom: 3px solid black; }
 
 @media only screen and (max-width: 767px) {
@@ -446,7 +500,9 @@ a.btn_logIn,
   margin-right: 10px; }
 
 .hero-slides .owl-dots .owl-dot.active {
+
   color: black; }
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breakpoint-on .classynav ul li.cn-dropdown-item > a::after,
@@ -472,19 +528,23 @@ a.btn_logIn,
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: capitalize;
+
   background-color:rgba(0,0,0, .5);
   box-shadow: 0px 5px 50px white;}
   
+
 
 .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+
   background-color: transparent;
   border-color: rgba(250, 250, 250, .7); }
 
 span {
   color: rgba(250, 250, 250, .7);
+
   font-size: 7em;
   text-decoration: none;
   outline: none; }
@@ -509,6 +569,7 @@ span {
       left: 50%;
       transform: translate(-50%);
       width: 50%;
+
       color: rgba(250, 250, 250, .7);
       background-color: rgba(0,0,0, .5);
       padding: 1em;
@@ -523,11 +584,13 @@ span {
     .home__Container--button1:hover {
       color: rgba(250, 250, 250, .7);
       background-color: rgba(250, 250, 250, .7); }
+
     .home__Container--button2 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
+
       color: rgba(250, 250, 250, .7);
       background-color: rgba(0,0,0, .5);
       padding: 1em;
@@ -541,11 +604,13 @@ span {
     .home__Container--button2:hover {
       color: rgba(250, 250, 250, .7);
       background-color: rgba(250, 250, 250, .7); }
+
     .home__Container--button3 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
+
       color: rgba(250, 250, 250, .7);
       background-color: rgba(0,0,0, .5);
       padding: 1em;
@@ -558,11 +623,13 @@ span {
     .home__Container--button3:hover {
       color: rgba(250, 250, 250, .7);
       background-color: rgba(250, 250, 250, .7); }
+
     .home__Container--button4 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
+
       color: rgba(250, 250, 250, .7);
       background-color: rgba(0,0,0, .5);
       padding: 1em;
@@ -576,6 +643,7 @@ span {
     .home__Container--button4:hover {
       color: rgba(250, 250, 250, .7);
       background-color:  rgba(250, 250, 250, .7); }
+
 
 .member-name {
   font-size: inherit;
@@ -595,6 +663,7 @@ span {
 
 .profile__container--heading {
   font-size: 3.5em;
+
   color: rgba(250, 250, 250, .7);
   margin-top: 5rem;
   width: 100%;
@@ -623,11 +692,14 @@ span {
   box-shadow: 0px 10px 100px white;;
  }
 
+
 .containerFooter {
   font-size: 2em;
   width: 100%;
   height: 2em;
+
   color: rgba(250, 250, 250, .7);
+
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -646,14 +718,17 @@ span {
   .navbar__Container--header {
     width: 100%;
     height: 5em;
+
     background-color: transparent;
     padding: 10em 10em 10em 10em;
     overflow: hidden;
     position: relative;
+
     top: 0; }
   .navbar__Container--link1 {
     font-size: 2em;
     padding: .6em 1em .6em 1em;
+
     background-color: rgba(0,0,0, .5);
     color: rgba(250, 250, 250, .7);
     /* border-right: 1px solid rgba(250, 250, 250, .7); */
@@ -715,12 +790,14 @@ span {
     font-size: 2em; }
   .navbar__Container--quote {
     font-family: 'Comfortaa', cursive; 
+
     color: #CEE0C7; }
 
   .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
+
     background-color: rgba(250, 250, 250, .7);
     border-color: transparent; }
 
@@ -728,10 +805,12 @@ span {
   background-color: rgba(0,0,0,.5);
 }    
 
+
 .modal-body{
     font-size: 22px;
 }
 
+y
 .modal-content{
   border-radius: 10rem;
   padding: 3rem;
@@ -739,6 +818,7 @@ span {
 
 .cooking-time{
   font-size: 1rem;
+
     float: left;
 }
   #quote {
@@ -746,6 +826,7 @@ span {
     color: rgba(250, 250, 250, .7);
   }
   #profile {
+
     font-family: 'Comfortaa', cursive; 
   }
 
@@ -755,3 +836,4 @@ span {
   width:100%;
 
 }
+
