@@ -1,41 +1,73 @@
+
+<video autoplay muted loop id="splashVideo">
+    <source src="/assets/images/Keep_Running.mp4" type="video/mp4">
+</video>
 <nav>
     <div class="navbar">
         <div class="navbar__Container">
+                
+            <div class="navbar__Container--main">
+
+                <h1><text class="navbar__Container--welcome">Hello, <span class="member-name"></span>! </text></h1>
+
+                <h3><text class="navbar__Container--quote" id="logo"><h1 id="quote"></text></h3>
+               
+            </div>
+
             <div class="navbar__Container--header">
                 <a class="navbar__Container--link1" href="/logout">
                     Logout
                 </a>
+
+
                 <a class="navbar__Container--link3" href="/profile">
                     Profile
                 </a>
+
+
                 <a class="navbar__Container--link2" href="/home">
                     Home
                 </a>
             </div>
-            
-            <div class="navbar__Container--main">
 
-                <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
-
-                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
-
-                <text class="navbar__Container--quote" id="logo"><h1 id="quote"></h1></text>
-               
-            </div>
         </div>
     </div>
     
 </nav>
-<div class="favorite-activities"></div>
 
-
-<footer>
-    <div class="containerFooter">
-        <div class="containerFooter__copyright">
-            © habit rabbit enterprises
-        </div>
-        <div class="containerFooter__logo">
-            <img class="containerFooter__logo--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+{{!-- 
+<div class="favorites-container">
+    {{#each recipes}}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{recipe_img}}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{recipe_name}}</h5>
+            <p class="card-text">{{description}}</p>
+            <a href="#" class="btn btn-primary">See Recipe!</a>
         </div>
     </div>
-</footer>
+    {{/each}}
+</div> --}}
+
+
+<section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        {{#each recipes}}
+        <div data-image = {{this.recipe_img}} class="single-hero-slide bg-img recipeImage" style="background-image: url('{{recipe_img}}');">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
+                            <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
+                            <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
+                            <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
+                            <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        {{/each}}
+
+    </div>
+</section>
