@@ -62,30 +62,35 @@ router.get("/favactivities", function (req, res) {
 })
 
 
+router.get("/favrecipes", function (req, res) {
+  res.render("favrecipes");
+})
+
+
 // router.get("/favrecipes", function (req, res) {
 //   res.render("favrecipes");
 // })
 
-router.post("/favrecipes", function (req, res) {
-  // res.render("favrecipes");
-  var newFave = {
-    ...req.body,
-    userID: req.user.id
-  }
-  console.log(newFave);
+// router.post("/favrecipes", function (req, res) {
+//   // res.render("favrecipes");
+//   var newFave = {
+//     ...req.body,
+//     userID: req.user.id
+//   }
+//   console.log(newFave);
 
-  db.FavoriteRecipes.create(
-    newFave
-  ).then(function (data) {
-    console.log(data);
-  }).catch(function (err) {
+//   db.FavoriteRecipes.create(
+//     newFave
+//   ).then(function (data) {
+//     console.log(data);
+//   }).catch(function (err) {
 
-    console.log(err);
-    // res.json(err);
-    // res.status(422).json(err.errors[0].message);
-  });
+//     console.log(err);
+//     // res.json(err);
+//     // res.status(422).json(err.errors[0].message);
+//   });
 
-})
+// })
 
 
 
@@ -157,8 +162,13 @@ router.get("/recipe", function (req, res) {
       }
       res.render("recipe", hbsObj);
     })
-  })
+  });
   
+  // router.get("/favactivities", function (req, res) {
+  //   db.Recipe.findAll({}).then( res.render("favactivities")
+  //   )});
+ 
+
   // Export routes for server.js to use.
   module.exports = router;
 

@@ -47,3 +47,4 @@ CREATE TABLE activities (
 
 SELECT * FROM activities;
 SELECT * FROM recipes;
+SELECT * FROM favoriteRecipes;
