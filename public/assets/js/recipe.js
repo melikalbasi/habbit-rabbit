@@ -26,6 +26,7 @@ $(document).ready(function() {
         var data = recipient.split("%");  
         //        console.log(data);
         var modal = $(this)
+        console.log(data);
         modal.find('.modal-header').text("Recipe!")
         modal.find('.modal-body').text("")
         modal.find('.modal-body').append(makeUL(data))
@@ -82,7 +83,7 @@ $(document).ready(function() {
         $(this).toggleClass('is_animating');
     });
 
-
+});
 
 // :: 5.0 Sliders Active Code
 //if ($.fn.owlCarousel) {
