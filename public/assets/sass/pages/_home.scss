@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-size: 2em;
+    font-size: 3em;
+    font-family: $font-sanSerif;
     &__Container{
         // width: 600px;
         display: flex;
@@ -22,14 +23,14 @@
             color: $color-primary-dark;
             background-color: $color-tertiary;
             padding: 1em;
-            border-width: 2px 2px 1px 2px;
+            border-width: 0px 0px 1px 0px;
             border-style: solid;
             border-color: $color-primary-dark;
             border-radius: 1em 1em 0em 0em;
         }
         &--button1:hover{
             color: $color-primary-light;
-            background-color: $color-secondary;
+            background-color: $color-secondary-dark;
         }
         &--button2{
             position: relative;
@@ -39,13 +40,13 @@
             color: $color-primary-dark;
             background-color: $color-tertiary;
             padding: 1em;
-            border-width: 1px 2px 1px 2px;
+            border-width: 1px 0px 1px 0px;
             border-style: solid;
             border-color: $color-primary-dark;
         }
         &--button2:hover{
             color: $color-primary-light;
-            background-color: $color-secondary;
+            background-color: $color-secondary-dark;
         }
         &--button3{
             position: relative;
@@ -55,13 +56,13 @@
             color: $color-primary-dark;
             background-color: $color-tertiary;
             padding: 1em;
-            border-width: 1px 2px 1px 2px;
+            border-width: 1px 0px 1px 0px;
             border-style: solid;
             border-color: $color-primary-dark;
         }
         &--button3:hover{
             color: $color-primary-light;
-            background-color: $color-secondary;
+            background-color: $color-secondary-dark;
         }
         &--button4{
             position: relative;
@@ -71,14 +72,14 @@
             color: $color-primary-dark;
             background-color: $color-tertiary;
             padding: 1em;
-            border-width: 1px 2px 2px 2px;
+            border-width: 1px 0px 0px 0px;
             border-style: solid;
             border-color: $color-primary-dark;
             border-radius: 0em 0em 1em 1em;
         }
         &--button4:hover{
             color: $color-primary-light;
-            background-color: $color-secondary;
+            background-color: $color-secondary-dark;
         }
        
     }

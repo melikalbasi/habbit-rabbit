@@ -17,7 +17,7 @@
 
                 <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
 
-                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+                <img class="navbar__Container--img" src="/assets/images/logo2_Running_Transparent.png" alt="Habit-Rabbit Logo">
 
                 <text class="navbar__Container--quote" id="logo"><h1 id="quote"></h1></text>
                
@@ -27,7 +27,7 @@
     
 </nav>
 
-section class="hero-area">
+<section class="hero-area">
   <div class="hero-slides owl-carousel">
     {{#each activities}}
     <div class="single-hero-slide bg-img" style="background-image: url('{{activity_img}}');">
@@ -36,8 +36,8 @@ section class="hero-area">
           <div class="col-12 col-md-9 col-lg-7 col-xl-6">
             <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
               <h2 data-animation="fadeInUp" data-delay="300ms">{{activity_name}}</h2>
-              <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
-              <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Activity</a>
+              <p class= "activity_Description"data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+              <a href="#" class="activity_Button" data-animation="fadeInUp" data-delay="1000ms">See Activity</a>
 
             </div>
           </div>
@@ -136,3 +136,13 @@ section class="hero-area">
     }
   }
 </script>
+<footer>
+    <div class="containerFooter">
+        <div class="containerFooter__copyright">
+            © habbit rabbit enterprises
+        </div>
+        <div class="containerFooter__logo">
+            <img class="containerFooter__logo--img" src="/assets/images/logo2_Running_Transparent.png" alt="Habit-Rabbit Logo">
+        </div>
+    </div>
+</footer>

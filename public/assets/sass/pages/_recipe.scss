@@ -137,4 +137,108 @@ span{
     text-decoration: none; 
     outline: none; 
 }
+.recipeName{
+  font-family: $font-cursive;
+  color: $color-accent;
+}
+.recipe_Button{
+  text-decoration: none; 
+  outline: none; 
+  border: none;
+  font-size: 2.5em;
+  background-color: $color-secondary;
+  color: $color-tertiary;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em;
+}
+.favorite_Button{
+  text-decoration: none; 
+  outline: none; 
+  border: none;
+  font-size: 2.5em;
+  background-color: $color-secondary;
+  color: $color-tertiary;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em;
+}
+.recipe_Button:hover{
+  background-color: $color-secondary-dark;
+  color: $color-tertiary;
+  text-decoration: none; 
+  outline: none; 
 
+}
+.recipe_Button:link{
+  text-decoration: none; 
+  outline: none; 
+
+}
+.recipe_Button:active{
+  text-decoration: none; 
+  outline: none; 
+
+}
+.recipe_Button:visited{
+  text-decoration: none; 
+  outline: none; 
+}
+.favorite_Button:hover{
+  background-color: $color-secondary-dark;
+  color: $color-tertiary;
+  text-decoration: none; 
+  outline: none; 
+
+}
+.favorite_Button:link{
+  text-decoration: none; 
+  outline: none; 
+
+}
+.favorite_Button:active{
+  text-decoration: none; 
+  outline: none; 
+
+}
+.favorite_Button:visited{
+  text-decoration: none; 
+  outline: none; 
+}
+.modal-header{
+  font-size: 4em;
+  color: $color-secondary-dark;
+  background-image: radial-gradient($color-primary-light,$color-tertiary);
+ 
+}
+.modal-body{
+  font-size: 2.5em;
+  font-family: $font-cursive;
+  color: $color-tertiary;
+  background-image: linear-gradient(-90deg, $color-primary,$color-primary-dark);
+}
+.modal-footer{
+  font-size: 2.5em;
+  color: $color-primary-light;
+  background-color: $color-primary-darkest;
+}
+.modal-dialog{
+  background-image: linear-gradient(-90deg, $color-primary,$color-primary-dark);
+}
+.modal_Button{
+  text-decoration: none; 
+  outline: none; 
+  border: none;
+  font-size: 1.5em;
+  background-color: $color-secondary-dark;
+  color: $color-tertiary;
+  padding: .5em;
+  // border-radius: 0em 2em 2em 0em;
+}
+.containerModal{
+  &__logo{
+    &--img{
+      height: 5em;
+    }
+  }
+}

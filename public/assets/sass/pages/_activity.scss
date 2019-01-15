@@ -1,0 +1,36 @@
+.activity_Button{
+  text-decoration: none; 
+  outline: none; 
+  border: none;
+  font-size: 2.5em;
+  background-color: $color-secondary;
+  color: $color-tertiary;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em;
+}
+.activity_Button:hover{
+    background-color: $color-secondary-dark;
+    color: $color-tertiary;
+    text-decoration: none; 
+    outline: none; 
+  
+  }
+  .activity_Button:link{
+    text-decoration: none; 
+    outline: none; 
+  
+  }
+  .activity_Button:active{
+    text-decoration: none; 
+    outline: none; 
+  
+  }
+  .activity_Button:visited{
+    text-decoration: none; 
+    outline: none; 
+  }
+  .activity_Description{
+      font-family: $font-sanSerif;
+      font-size: 4em;
+  }

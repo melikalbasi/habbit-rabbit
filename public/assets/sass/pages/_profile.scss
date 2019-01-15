@@ -19,12 +19,14 @@
     &__container{
         &--heading{
             font-size: 3.5em;
-            color: $color-primary-darkest;
+            color: $color-tertiary;
+            font-family: $font-cursive;
 
         }
         &--list{
             font-size: 2em;
             color: $color-primary-light;
+            font-family: $font-sanSerif;
 
         }
     }

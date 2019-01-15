@@ -6,7 +6,8 @@
             width: 100%;
             height: 5em;
             border-bottom: 2px solid $color-primary-dark;
-            background-color: $color-primary-light;
+            background-image: linear-gradient(-90deg, $color-primary-dark,$color-primary);
+            // background-color: $color-secondary;
             padding: 1em 0em 1em 0em;
             overflow: hidden;
             position: fixed;
@@ -20,7 +21,8 @@
             border-right: 1px solid $color-primary-dark;  
         }
         &--link1:hover{
-            color: $color-secondary-dark;
+            color: $color-tertiary;
+            background-color: $color-secondary-dark;
         }
         &--link3{
             font-size: 2em;
@@ -30,7 +32,8 @@
             border-right: 1px solid $color-primary-dark;  
         }
         &--link3:hover{
-            color: $color-secondary-dark;
+            color: $color-tertiary;
+            background-color: $color-secondary-dark;
         }
         &--link2{
             font-size: 2em;
@@ -42,7 +45,9 @@
             border-right: 1px solid $color-primary-dark;
         }
         &--link2:hover{
-            color: $color-secondary-dark;
+            color: $color-tertiary;
+            background-color: $color-secondary-dark;
+            
         }
 
         &--main{
@@ -50,12 +55,13 @@
             width: 100%;
             height: 20em;
             // border-bottom: 2px solid $color-secondary-dark;
-            background-color: $color-primary-darkest;
+            // background-color: $color-primary-darkest;
+            background-image: radial-gradient($color-secondary-darkest,$color-primary-darkest);
             display:flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            box-shadow: 0px 10px 8px $color-primary-dark;
+            // box-shadow: 0px 10px 8px $color-primary-dark;
 
         }
         &--img{
@@ -63,13 +69,15 @@
         }
         &--welcome{
             color: $color-primary-light;
-            
+            padding-left: 1em;
             font-size: 2em;
             
 
         }
         &--quote{
-            color: $color-primary-light;
+            color: $color-secondary-dark;
+            font-family: $font-cursive;
+            padding-right: 1em;
         }
      
     

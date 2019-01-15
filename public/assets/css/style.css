@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #9BC18D;
-  font-family: 'Bitter', serif; }
+  background-image: linear-gradient(-90deg, #646263, #8e8c81);
+  font-family: "Merriweather", serif; }
 
 html {
   font-size: 62.5%; }
@@ -77,9 +77,11 @@ a:active {
     .splash__Logo--img {
       width: 600px; } }
   .splash__Button {
-    color: #CEE0C7;
+    color: #fffbe8;
     transform: translate(-50%, -50%); }
     .splash__Button--button {
+      position: relative;
+      right: 9em;
       padding: 0;
       border: none;
       font: inherit;
@@ -89,33 +91,32 @@ a:active {
       display: inline-block;
       text-align: center;
       text-decoration: none;
-      border: solid 2px #C16F38;
-      border-radius: 2em;
-      font-family: 'Bitter', serif;
-      color: #CEE0C7;
-      background-color: #CEE0C7;
-      padding: 1em 7em;
-      margin: 2em; }
+      border: solid 2px #907b4c;
+      border-radius: 9em 0em 12em 12em;
+      color: #fffbe8;
+      background-color: #907b4c;
+      padding: 8em 7em;
+      margin: 4em; }
     .splash__Button--button:active {
       transform: translateY(1px);
       filter: saturate(150%); }
     .splash__Button--button:hover {
-      color: #C16F38;
-      background-color: #CEE0C7;
-      border: solid 2px #C16F38; }
+      color: #907b4c;
+      background-color: #5a7670;
+      border: solid 2px #907b4c; }
     .splash__Button--text {
       text-decoration: none;
       outline: none;
-      font-size: 2em;
-      color: #C16F38; }
+      font-size: 5em;
+      color: #907b4c; }
     .splash__Button--text:link {
       text-decoration: none;
       outline: none;
-      font-size: 2em;
-      color: #C16F38; }
+      font-size: 5em;
+      color: #907b4c; }
 
 #habit {
-  color: #C16F38; }
+  color: #907b4c; }
 
 #slider {
   position: absolute;
@@ -149,20 +150,20 @@ a:active {
   font-family: 'Bitter', serif; }
   .containerSignUp__heading {
     text-align: center;
-    font-size: 4em;
-    color: #60371c; }
+    font-size: 5em;
+    color: #ede6e7; }
   .containerSignUp__message {
-    font-size: 2em;
-    color: #60371c; }
+    font-size: 3em;
+    color: #ede6e7; }
   .containerSignUp__select {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     border-radius: 2em;
     text-decoration: none;
     outline: none;
-    border: solid 2px #C16F38;
-    color: #C16F38;
-    background-color: #CEE0C7;
+    border: solid 2px #907b4c;
+    color: #907b4c;
+    background-color: #fffbe8;
     padding: .8em .8em;
     margin: 1.5em; }
     .containerSignUp__select--heading {
@@ -175,14 +176,14 @@ a:active {
     text-decoration: none;
     outline: none; }
   .containerSignUp__select:hover {
-    color: #CEE0C7;
-    background-color: #C16F38;
+    color: #fffbe8;
+    background-color: #907b4c;
     text-decoration: none;
     outline: none; }
 
 label {
-  font-size: 2em;
-  color: #60371c; }
+  font-size: 3em;
+  color: #ede6e7; }
 
 .btn_signUp {
   padding: 0;
@@ -197,18 +198,18 @@ label {
   border: solid 2px transparent;
   border-radius: 2em;
   font-family: 'Bitter', serif;
-  font-size: 1.5em;
-  color: #CEE0C7;
-  background-color: #C16F38;
+  font-size: 3em;
+  color: #fffbe8;
+  background-color: #907b4c;
   padding: 1em 4em;
   margin: 1em; }
 
 .btn_signUp:hover {
   text-decoration: none;
   outline: none;
-  color: #C16F38;
-  background-color: #CEE0C7;
-  border: solid 2px #C16F38; }
+  color: #907b4c;
+  background-color: #fffbe8;
+  border: solid 2px #907b4c; }
 
 .btn_logIn {
   padding: 0;
@@ -224,21 +225,22 @@ label {
   border: solid 2px transparent;
   border-radius: 2em;
   font-family: 'Bitter', serif;
-  font-size: 1.5em;
-  color: #CEE0C7;
-  background-color: #C16F38;
+  font-size: 3em;
+  color: #fffbe8;
+  background-color: #907b4c;
   padding: 1em 4.5em;
   margin: 1em; }
 
 .btn_logIn:hover {
-  color: #C16F38;
-  background-color: #CEE0C7;
-  border: solid 2px #C16F38; }
+  color: #907b4c;
+  background-color: #fffbe8;
+  border: solid 2px #907b4c; }
 
 .form-control {
-  background-color: #CEE0C7;
-  color: #60371c;
+  background-image: radial-gradient(#fffbe8, #ede6e7);
+  color: #5a7670;
   font-size: 1.5em;
+  font-family: "Arima Madurai", cursive;
   text-decoration: none;
   outline: none;
   border-radius: 2em; }
@@ -246,11 +248,11 @@ label {
 .containerLogIn__heading {
   text-align: center;
   font-size: 4em;
-  color: #60371c; }
+  color: #ede6e7; }
 
 .containerLogIn__message {
   font-size: 2em;
-  color: #60371c; }
+  color: #ede6e7; }
 
 #owl-demo .item img {
   display: block;
@@ -394,13 +396,13 @@ label {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   text-transform: capitalize;
-  background-color: #C16F38; }
+  background-color: #907b4c; }
 
 .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  background-color: #9BC18D;
+  background-color: #646263;
   border-color: #40ba37; }
 
 span {
@@ -409,12 +411,106 @@ span {
   text-decoration: none;
   outline: none; }
 
+.recipeName {
+  font-family: "Arima Madurai", cursive;
+  color: #3fb0ac; }
+
+.recipe_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.favorite_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.recipe_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.recipe_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.favorite_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.modal-header {
+  font-size: 4em;
+  color: #5a7670;
+  background-image: radial-gradient(#fffbe8, #ede6e7); }
+
+.modal-body {
+  font-size: 2.5em;
+  font-family: "Arima Madurai", cursive;
+  color: #ede6e7;
+  background-image: linear-gradient(-90deg, #646263, #8e8c81); }
+
+.modal-footer {
+  font-size: 2.5em;
+  color: #fffbe8;
+  background-color: #2d2930; }
+
+.modal-dialog {
+  background-image: linear-gradient(-90deg, #646263, #8e8c81); }
+
+.modal_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 1.5em;
+  background-color: #5a7670;
+  color: #ede6e7;
+  padding: .5em; }
+
+.containerModal__logo--img {
+  height: 5em; }
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  font-size: 2em; }
+  font-size: 3em;
+  font-family: "Alegreya Sans", sans-serif; }
   .home__Container {
     display: flex;
     flex-direction: column;
@@ -429,59 +525,59 @@ span {
       left: 50%;
       transform: translate(-50%);
       width: 50%;
-      color: #658361;
-      background-color: #d0dd97;
+      color: #8e8c81;
+      background-color: #ede6e7;
       padding: 1em;
-      border-width: 2px 2px 1px 2px;
+      border-width: 0px 0px 1px 0px;
       border-style: solid;
-      border-color: #658361;
+      border-color: #8e8c81;
       border-radius: 1em 1em 0em 0em; }
     .home__Container--button1:hover {
-      color: #CEE0C7;
-      background-color: #C16F38; }
+      color: #fffbe8;
+      background-color: #5a7670; }
     .home__Container--button2 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
-      color: #658361;
-      background-color: #d0dd97;
+      color: #8e8c81;
+      background-color: #ede6e7;
       padding: 1em;
-      border-width: 1px 2px 1px 2px;
+      border-width: 1px 0px 1px 0px;
       border-style: solid;
-      border-color: #658361; }
+      border-color: #8e8c81; }
     .home__Container--button2:hover {
-      color: #CEE0C7;
-      background-color: #C16F38; }
+      color: #fffbe8;
+      background-color: #5a7670; }
     .home__Container--button3 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
-      color: #658361;
-      background-color: #d0dd97;
+      color: #8e8c81;
+      background-color: #ede6e7;
       padding: 1em;
-      border-width: 1px 2px 1px 2px;
+      border-width: 1px 0px 1px 0px;
       border-style: solid;
-      border-color: #658361; }
+      border-color: #8e8c81; }
     .home__Container--button3:hover {
-      color: #CEE0C7;
-      background-color: #C16F38; }
+      color: #fffbe8;
+      background-color: #5a7670; }
     .home__Container--button4 {
       position: relative;
       left: 50%;
       transform: translate(-50%);
       width: 50%;
-      color: #658361;
-      background-color: #d0dd97;
+      color: #8e8c81;
+      background-color: #ede6e7;
       padding: 1em;
-      border-width: 1px 2px 2px 2px;
+      border-width: 1px 0px 0px 0px;
       border-style: solid;
-      border-color: #658361;
+      border-color: #8e8c81;
       border-radius: 0em 0em 1em 1em; }
     .home__Container--button4:hover {
-      color: #CEE0C7;
-      background-color: #C16F38; }
+      color: #fffbe8;
+      background-color: #5a7670; }
 
 .member-name {
   font-size: inherit;
@@ -501,17 +597,52 @@ span {
 
 .profile__container--heading {
   font-size: 3.5em;
-  color: #222c21; }
+  color: #ede6e7;
+  font-family: "Arima Madurai", cursive; }
 
 .profile__container--list {
   font-size: 2em;
-  color: #CEE0C7; }
+  color: #fffbe8;
+  font-family: "Alegreya Sans", sans-serif; }
+
+.activity_Button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 2.5em;
+  background-color: #907b4c;
+  color: #ede6e7;
+  padding: 1em;
+  border-radius: .5em;
+  margin: .5em; }
+
+.activity_Button:hover {
+  background-color: #5a7670;
+  color: #ede6e7;
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:link {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:active {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Button:visited {
+  text-decoration: none;
+  outline: none; }
+
+.activity_Description {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 4em; }
 
 .containerFooter {
   font-size: 2em;
   width: 100%;
   height: 2em;
-  color: #60371c;
+  color: #fffbe8;
   display: flex;
   flex-direction: row;
   justify-content: center; }
@@ -529,8 +660,8 @@ span {
   .navbar__Container--header {
     width: 100%;
     height: 5em;
-    border-bottom: 2px solid #658361;
-    background-color: #CEE0C7;
+    border-bottom: 2px solid #8e8c81;
+    background-image: linear-gradient(-90deg, #8e8c81, #646263);
     padding: 1em 0em 1em 0em;
     overflow: hidden;
     position: fixed;
@@ -538,43 +669,48 @@ span {
   .navbar__Container--link1 {
     font-size: 2em;
     padding: .6em 1em .6em 1em;
-    background-color: #d0dd97;
-    color: #658361;
-    border-right: 1px solid #658361; }
+    background-color: #ede6e7;
+    color: #8e8c81;
+    border-right: 1px solid #8e8c81; }
   .navbar__Container--link1:hover {
-    color: #60371c; }
+    color: #ede6e7;
+    background-color: #5a7670; }
   .navbar__Container--link3 {
     font-size: 2em;
     padding: .6em 1em .6em 1em;
-    background-color: #d0dd97;
-    color: #658361;
-    border-right: 1px solid #658361; }
+    background-color: #ede6e7;
+    color: #8e8c81;
+    border-right: 1px solid #8e8c81; }
   .navbar__Container--link3:hover {
-    color: #60371c; }
+    color: #ede6e7;
+    background-color: #5a7670; }
   .navbar__Container--link2 {
     font-size: 2em;
     padding: .6em 1em .6em 1em;
-    background-color: #d0dd97;
-    color: #658361;
+    background-color: #ede6e7;
+    color: #8e8c81;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
-    border-right: 1px solid #658361; }
+    border-right: 1px solid #8e8c81; }
   .navbar__Container--link2:hover {
-    color: #60371c; }
+    color: #ede6e7;
+    background-color: #5a7670; }
   .navbar__Container--main {
     padding-top: 5em;
     width: 100%;
     height: 20em;
-    background-color: #222c21;
+    background-image: radial-gradient(#493e27, #2d2930);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0px 10px 8px #658361; }
+    align-items: center; }
   .navbar__Container--img {
     height: 20em; }
   .navbar__Container--welcome {
-    color: #CEE0C7;
+    color: #fffbe8;
+    padding-left: 1em;
     font-size: 2em; }
   .navbar__Container--quote {
-    color: #CEE0C7; }
+    color: #5a7670;
+    font-family: "Arima Madurai", cursive;
+    padding-right: 1em; }

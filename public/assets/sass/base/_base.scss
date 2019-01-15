@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: $color-primary;
-    font-family: 'Bitter', serif;
+    background-image: linear-gradient(-90deg, $color-primary,$color-primary-dark);
+    // background-color: $color-primary;
+    font-family: $font-serif;
     // background-color: red;
 }
 html {

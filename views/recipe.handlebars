@@ -19,7 +19,7 @@
 
                 <text class="navbar__Container--welcome">Welcome <span class="member-name"></span>! You are logged in!</text>
 
-                <img class="navbar__Container--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+                <img class="navbar__Container--img" src="/assets/images/logo2_Carrot_Transparent.png" alt="Habit-Rabbit Logo">
 
                 <text class="navbar__Container--quote" id="logo"><h1 id="quote"></h1></text>
                
@@ -37,17 +37,17 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                            <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
-                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p>
+                            {{!-- <h2 data-animation="fadeInUp" data-delay="300ms">{{recipe_name}}</h2>
+                            <p data-animation="fadeInUp" data-delay="700ms">{{description}}</p> --}}
                             <!--                            <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>-->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="{{this.instructions}}">Get Recipe!</button>
 
-                        </div>
 
                             <h2 class = "recipeName" data-animation="fadeInUp" data-delay="300ms">{{this.recipe_name}}</h2>
                             <p class = "recipeDescription" data-animation="fadeInUp" data-delay="700ms">{{this.description}}</p>
-                            <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button>
-                            <button  class = "favoriteRecipe btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
+                            <button type="button" class="recipe_Button" data-toggle="modal" data-target="#exampleModal" data-whatever="{{this.instructions}}">Get Recipe!</button>
+                            {{!-- <button id = "myBtn" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</button> --}}
+                            <button  class = "favorite_Button" data-animation="fadeInUp" data-delay="1000ms">Send to favorites</button>
+                        </div>
                     </div>
 
                 </div>
@@ -71,8 +71,9 @@
             <div class="modal-body">
             </div>
             <div class="modal-footer">
+                     <img class="containerModal__logo--img" src="/assets/images/logo2_Carrot_Transparent.png" alt="Habit-Rabbit Logo">
                 <p id="cooking-time">Cooking time: 10Min</p>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="modal_Button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -80,10 +81,10 @@
 <footer>
     <div class="containerFooter">
         <div class="containerFooter__copyright">
-            © habit rabbit enterprises
+            © habbit rabbit enterprises
         </div>
         <div class="containerFooter__logo">
-            <img class="containerFooter__logo--img" src="/assets/images/logo_transparent.png" alt="Habit-Rabbit Logo">
+            <img class="containerFooter__logo--img" src="/assets/images/logo2_Carrot_Transparent.png" alt="Habit-Rabbit Logo">
         </div>
     </div>
 </footer>

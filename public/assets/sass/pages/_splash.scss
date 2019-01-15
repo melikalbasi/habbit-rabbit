@@ -45,20 +45,22 @@
         color: $color-primary-light;
         transform: translate(-50%, -50%);
         &--button{
+            position: relative;
+            right: 9em;
             @include button-reset;
             display: inline-block;
             text-align: center;
             text-decoration: none;
             border: solid 2px $color-secondary;
-            border-radius: 2em;
-            font-family: 'Bitter', serif;
+            border-radius: 9em 0em 12em 12em;
+            
             // font-size: 4em;
             color: $color-primary-light;
-            background-color: $color-primary-light;
+            background-color: $color-secondary;
             
             
-            padding: 1em 7em ;
-            margin: 2em;
+            padding: 8em 7em ;
+            margin: 4em;
             
         }
         &--button:active{
@@ -68,20 +70,20 @@
         }
         &--button:hover{
             color: $color-secondary;
-            background-color: $color-primary-light;
+            background-color: $color-secondary-dark;
             border: solid 2px $color-secondary;
         }
 
        &--text{
         text-decoration: none;
         outline: none;
-        font-size: 2em;
+        font-size: 5em;
         color: $color-secondary;
        }
        &--text:link{
         text-decoration: none;
         outline: none;
-        font-size: 2em;
+        font-size: 5em;
         color: $color-secondary;
        }
     }
